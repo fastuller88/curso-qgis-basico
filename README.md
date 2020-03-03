@@ -13,4 +13,4 @@ Este repositorio contiene información y materiales para el "Curso QGIS Básico"
 
 ## Cotenidos
 
-* [Fundamentos de sistemas de información](fumdamentos/fundamentos.md). Introducción a los sistemas información geográficos y presentación de QGIS 3.
+* [Fundamentos de sistemas de información](../../fumdamentos/fundamentos.md). Introducción a los sistemas información geográficos y presentación de QGIS 3.

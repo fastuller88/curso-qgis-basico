@@ -1,7 +1,6 @@
-# Curso QGIS Básico
+[![Logo](/logo.png)]
 
-![Logo](/logo.png)
-
+# Curso QGIS 3 Básico
 Este repositorio contiene información y materiales para el "Curso QGIS Básico"
 
 ## El curso
@@ -12,3 +11,6 @@ Este repositorio contiene información y materiales para el "Curso QGIS Básico"
 - Lugar: Ciudad de Ibarra
 
 
+## Cotenidos
+
+* [Fundamentos de sistemas de información. Presentación de QGIS](fumdamentos/fundamentos.rst)

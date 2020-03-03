@@ -1,4 +1,4 @@
-[Logo](/logo.png)
+[![Logo](/logo.png)](http://awesome-scalability.com/)
 
 # Curso QGIS Básico
 Este repositorio contiene información y materiales para el "Curso QGIS Básico"

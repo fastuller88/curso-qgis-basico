@@ -14,4 +14,11 @@ Este repositorio contiene información y materiales para el "Curso QGIS Básico"
 ## Cotenidos
 
 * [Fundamentos SIG](fundamentos/fundamentos.md). Conceptos genereales de los sistemas información geográfico.
-* [Interfaz](fundamentos/interfaz.md). Breve presentación de QGIS.
+* [Interfaz](interfaz/interfaz.md). Breve presentación de QGIS.
+* [Goservicios](geoservicios/geoservicios.md). Conexión a servicios WMS, WFS y WCS de la OGC.
+* [Simboligía](simbologia/simbologia.md). Simbología y etiquetado básico de capas vectoriales.
+* [Generación de información](vectorizacion/vectorizacion.md). Creación y edición vectorial.
+* [Calculadora de campos](calculadora/calculadora.md). Cálculo de atributos.
+* [Análisis espacial](analisis/analisis.md). Análisis de distancia y superposición.
+* [Automatización](automatizacion/automatizacion.md). Introducción a la modelización de procesos espaciales.
+* [Potencialidades](potencialidades/potencialidades.md). Ejemplos de herramientas avanzadas de análisis.

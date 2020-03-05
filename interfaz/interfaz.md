@@ -24,8 +24,7 @@ Aquí hay solo algunas de las razones:
 ## Añadiendo tu primera capa 
 
 > Nota: Antes de comenzar este ejercicio, QGIS debe estar instalado en su computadora.
-> Descarga un archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS_cuenca](https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS_cuenca.zip)
 
-> 
->
-> 
+Descarga el archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS_cuenca](https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS_cuenca.zip). Debes descomprimir el archivo en una carpeta en tu disco duro antes de comenzar a trabajar.
+
+> Nota: Las capturas de pantalla para este curso se tomaron utilizando  QGIS 3.10. Dependiendo de tu instalación, las pantallas que encontrarás puede que sean algo diferentes. Sin embargo, los mismos botones estarán disponibles, y las instrucciones funcionarán en cualquier SO. Necesitarás QGIS 3.10 (la versión más reciente al momento de la escritura) para usar este curso. Si algo no corresponde a lo que aparece en el programa, puede ser que aún el manual no esté actualizado. Por favor contactar al autor: johnatan.astudillo@gmail.com para solicitar la correspondiente actualización del material.

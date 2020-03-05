@@ -1,7 +1,7 @@
 ![Logo](/logo.png)
 
 # Curso QGIS 3 Básico
-Este repositorio contiene información y materiales para el "Curso QGIS Básico"
+Este repositorio contiene información y materiales para el "Curso QGIS Básico". Algunos contenidos se obteniedo y adaptado de la [documentación oficial])(https://docs.qgis.org/3.4/en/docs/) de QGIS.
 
 ## El curso
 
@@ -22,3 +22,4 @@ Este repositorio contiene información y materiales para el "Curso QGIS Básico"
 * [Análisis espacial](analisis/analisis.md). Análisis de distancia y superposición.
 * [Automatización](automatizacion/automatizacion.md). Introducción a la modelización de procesos espaciales.
 * [Potencialidades](potencialidades/potencialidades.md). Ejemplos de herramientas avanzadas de análisis.
+

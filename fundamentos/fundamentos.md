@@ -1,5 +1,7 @@
-# Fundamentos de los Sistema de Información Geográfica
-En esta sección revisaremos brevemente los conceptos más importantes de los Sistemas de Información Geográfica (SIG)
+![Logo](img/intro.jpg)
+
+# Fundamentos de los Sistemas de Información Geográfica
+En esta sección revisaremos brevemente los conceptos más importantes de los Sistemas de Información Geográfica (SIG). Si deseas profundizar acerca de este tema, puedes revisar el [Libro de Sistemas de Información Geográfica](https://volaya.github.io/libro-sig/) de Víctor Olaya, del cúal se ha tomado información que forma parte de esta sección.
 
 
 ## Contenidos

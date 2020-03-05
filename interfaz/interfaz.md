@@ -24,5 +24,9 @@ Aquí hay solo algunas de las razones:
 ## Añadiendo tu primera capa 
 
 > Nota: Antes de comenzar este ejercicio, QGIS debe estar instalado en su computadora.
-> Descarga un archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS_cuenca](/data)
+> Descarga un archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS_cuenca](/data/trainingdata_QGIS_cuenca.zip)
 > 
+> ![Descargar datos](img/download_data.png)
+> 
+> 
+<!-- > https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS_cuenca.zip -->

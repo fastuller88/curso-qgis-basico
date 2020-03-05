@@ -6,8 +6,8 @@ En esta sección te familiarizaras con la interfaz que nos presenta QGIS. Despu�
 
 ## Contenidos
 
-- [¿Por qué QGIS?](#¿Por qué QGIS?)
-- [Añadiendo tu primera capa](#Añadiendo tu primera capa)
+* [¿Por qué QGIS?](#¿Por qué QGIS?)
+* [Añadiendo tu primera capa](#Añadiendo tu primera capa)
 
 
 ## ¿Por qué QGIS?

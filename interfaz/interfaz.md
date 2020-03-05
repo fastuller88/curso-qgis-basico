@@ -6,11 +6,11 @@ En esta sección te familiarizaras con la interfaz que nos presenta QGIS. Despu�
 
 ## Contenidos
 
-* [¿Por qué QGIS?](#abc)
+* [¿Por qué QGIS?](#'¿Por qué QGIS?')
 * [Añadiendo tu primera capa](#Añadiendo tu primera capa)
 
 
-## abc
+## ¿Por qué QGIS?
 Como la información se vuelve cada vez más espacialmente consciente, no hay escasez de herramientas capaces de satisfacer algunas o incluso todas las funciones utilizadas en SIG. ¿Por qué debería uno utilizar QGIS en lugar de otros paquetes de software de GIS?.
 
 Aquí hay solo algunas de las razones:

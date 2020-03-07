@@ -8,7 +8,7 @@ En esta sección te familiarizaras con la interfaz que nos presenta QGIS. Despu�
 
 * [Una Breve Introducción](#una-breve-introduccion)
     * [¿Por qué QGIS?](#por-qué-qgis)
-* [Añadiendo tu primera capa](#añadiendo-tu-primera-capa)
+* [Añadiendo tu primera capa](#anadiendo-tu-primera-capa)
     - [Paso a paso: Prepara un mapa](#paso-a-paso-prepara-un-mapa)
 * [Una vista general de la interfaz](#una-vista-general-de-la-interfaz)
     - [Panel de capas](#panel-de-capas)
@@ -45,19 +45,19 @@ Descarga el archivo comprimido con los datos para éste curso haciendo click en 
 ### Paso a paso: Prepara un mapa
 
 * Abre QGIS. Tendrás un nuevo mapa en blanco.
-* Busca el botón `Administrador de fuente de datos`: ![Añadir capa](img/addLayer.png) y haz click en él para abrir el siguiente diálogo:
-![Dialogo administrador fuente de datos](img/fuenteDeDatos.png)
-* Clica en el botón de explorar ![Explorar](img/explorar.png) y navega al archivo `trainingdata_QGIS/epsg4326WGS84/roads.gpkg` (en el directorio de tu curso). Con este archivo seleccionado, clica en `Abrir`. Verás el diálogo original, pero con la ruta de archivo rellena. Clica en `Añadir`. Los datos que has especificado se cargarán.
+* Busca el botón `Administrador de fuente de datos`: ![Añadir capa](/img/addLayer.png) y haz click en él para abrir el siguiente diálogo:
+![Dialogo administrador fuente de datos](/img/fuenteDeDatos.png)
+* Clica en el botón de explorar ![Explorar](/img/explorar.png) y navega al archivo `trainingdata_QGIS/epsg4326/roads.shp` (en el directorio de tu curso). Con este archivo seleccionado, clica en `Abrir`. Verás el diálogo original, pero con la ruta de archivo rellena. Clica en `Añadir`. Los datos que has especificado se cargarán.
 
 ¡Enhorabuena! :+1:  Ya tienes un nuevo mapa básico. Ahora sería un buen momento para guardar tu trabajo.
 
-* Haga clic en el botón `Guardar Proyecto`...:![Guardar Proyecto](img/guardar.png)
+* Haga clic en el botón `Guardar Proyecto`...:![Guardar Proyecto](/img/guardar.png)
 * Guarda el mapa en `exercise_data/` y nómbralo `mi_primer_mapa.qgz`.
 
 ## Una vista general de la interfaz
 
 Exploraremos la interfaz de usuario de QGIS, de forma que se familiarice con los menús, barras de herramientas, lienzo del mapa y lista de capas, que forman la estructura básica de la interfaz.
-![Vista General](img/vistaGeneral.png)
+![Vista General](/img/vistaGeneral.png)
 
 Los elementos identificados en la figura superior son:
 
@@ -69,7 +69,7 @@ Los elementos identificados en la figura superior son:
 
 Abre un proyecto e identifica los elementos
 
-* Busca el botón `Abrir proyecto`: ![Abrir proyecto](img/abrir.png) 
+* Busca el botón `Abrir proyecto`: ![Abrir proyecto](/img/abrir.png) 
 * Navega al archivo `trainingdata_QGIS/proyectos/general.qgz` (en el directorio de tu curso). Clica en `Abrir`. Los datos que has especificado se cargarán.
 
 :eyes: [Comprueba tus resultados](/respuestas/respuestas.md#resultados-para-añadiendo-tu-primera-capa)
@@ -106,10 +106,10 @@ Trate de encontrar cada una de estas herramientas en su pantalla. Algunas de ell
 
 > Nota: Si alguna de estas herramientas no está visible en su pantalla, pruebe activando algunas barras de herramientas que estén actualmente ocultas. Tenga también presente que si no hay espacio suficiente en la pantalla una barra de herramientas se puede acortar ocultando alguna de sus herramientas. Puede ver las herramientas ocultas haciendo clic en el botón con una flecha derecha en cualquier barra de herramientas que se encuentre colapsada. Puede ver un consejo con el nombre de cualquier herramienta manteniendo el ratón sobre la herramienta un instante.
 
-1. ![Zoom a la capa](img/zoomCapa.png)
-2. ![Indentificar objectos espaciales](img/info.png)
-3. ![Escala](img/escala.png)
-4. ![Medir](img/regla.png)
+1. ![Zoom a la capa](/img/zoomCapa.png)
+2. ![Indentificar objectos espaciales](/img/info.png)
+3. ![Escala](/img/escala.png)
+4. ![Medir](/img/regla.png)
 
 :eyes: [Comprueba tus resultados](/respuestas/respuestas.md#resultados-para-un-resumen-de-la-interfaz)
 

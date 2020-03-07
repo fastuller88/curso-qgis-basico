@@ -9,7 +9,6 @@ En esta sección te familiarizaras con la interfaz que nos presenta QGIS. Despu�
 * [¿Por qué QGIS?](#por-qué-qgis)
 * [Añadiendo tu primera capa](#añadiendo-tu-primera-capa)
 
-
 ## ¿Por qué QGIS?
 Como la información se vuelve cada vez más espacialmente consciente, no hay escasez de herramientas capaces de satisfacer algunas o incluso todas las funciones utilizadas en SIG. ¿Por qué debería uno utilizar QGIS en lugar de otros paquetes de software de GIS?.
 
@@ -28,3 +27,14 @@ Aquí hay solo algunas de las razones:
 Descarga el archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS_cuenca](https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS_cuenca.zip). Debes descomprimir el archivo en una carpeta en tu disco duro antes de comenzar a trabajar.
 
 > Nota: Las capturas de pantalla para este curso se tomaron utilizando  QGIS 3.10. Dependiendo de tu instalación, las pantallas que encontrarás puede que sean algo diferentes. Sin embargo, los mismos botones estarán disponibles, y las instrucciones funcionarán en cualquier SO. Necesitarás QGIS 3.10 (la versión más reciente al momento de la escritura) para usar este curso. Si algo no corresponde a lo que aparece en el programa, puede ser que aún el manual no esté actualizado. Por favor contactar al autor: johnatan.astudillo@gmail.com para solicitar la correspondiente actualización del material.
+
+### Paso a paso: Prepara un mapa
+
+* Abre QGIS. Tendrás un nuevo mapa en blanco.
+* Busca el botón __Administrador de fuente de datos__: [Añadir capa](img/addLayer.png) y haz click en él para 
+
+
+
+
+
+

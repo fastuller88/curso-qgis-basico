@@ -7,7 +7,7 @@
 
 Deberías ver muchas líneas que representan carreteras. Todas estas líneas están en la capa vectorial que acabas de cargar para crear el mapa básico.
 
-
+![Añadir capa](img/anadirCapa.png)
 
 ## Resultados para un resumen de la interfaz
 

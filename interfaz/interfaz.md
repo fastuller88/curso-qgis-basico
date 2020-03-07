@@ -6,10 +6,24 @@ En esta sección te familiarizaras con la interfaz que nos presenta QGIS. Despu�
 
 ## Contenidos
 
-* [¿Por qué QGIS?](#por-qué-qgis)
+* [Una Breve Introducción](#una-breve-introduccion)
+    * [¿Por qué QGIS?](#por-qué-qgis)
 * [Añadiendo tu primera capa](#añadiendo-tu-primera-capa)
+    - [Paso a paso: Prepara un mapa](#paso-a-paso-prepara-un-mapa)
+* [Una vista general de la interfaz](#una-vista-general-de-la-interfaz)
+    - [Panel de capas](#panel-de-capas)
+    - [Panel del explorador](#panel-del-explorador)
+    - [Barras de herramientas](#barras-de-herramientas)
+    - [Lienzo del mapa](#lienzo-del-mapa)
+    - [Inténtalo tú!](#intentalo-tu)
+* [¿Qué sigue a continuación?](#que-sigue-a-continuacion)
 
-## ¿Por qué QGIS?
+## Una Breve Introducción
+
+En éste módulo introducimos el propio QGIS, además de explicar la interfaz de usuario.
+Después de completar ésta sección, serás capaz de identificar correctamente los elementos básicos de la pantalla de QGIS y sabrás qué hace cada uno, y cargar un shapefile dentro de QGIS.
+
+### ¿Por qué QGIS?
 Como la información se vuelve cada vez más espacialmente consciente, no hay escasez de herramientas capaces de satisfacer algunas o incluso todas las funciones utilizadas en SIG. ¿Por qué debería uno utilizar QGIS en lugar de otros paquetes de software de GIS?.
 
 Aquí hay solo algunas de las razones:
@@ -60,7 +74,7 @@ Abre un proyecto e identifica los elementos
 
 :eyes: [Comprueba tus resultados](/respuestas/respuestas.md#resultados-para-añadiendo-tu-primera-capa)
 
-### :one: Panel de capas  
+### Panel de capas  
 
 En el panel de capas puede ver una lista, en cualquier momento, de todas las capas que están disponibles.
 En la parte superior del panel están  herramientas que le permitirá administrar las capas mediante la creación de grupos, eliminación de capas,  leyendas, visibilidad de capas, expansión de los contenidos de cada capa y el estilo de capa.
@@ -68,21 +82,21 @@ En la parte superior del panel están  herramientas que le permitirá administra
 Expandiendo los elementos colapsados (haciendo clic en la flecha o símbolo más a su lado) se obtiene más información sobre el aspecto actual de la capa.
 Un clic derecho sobre una capa mostrará un menú con muchas opciones extra. ¡Pronto estará usando algunas de ellas, así que écheles un vistazo!
 
-### :two: Panel del explorador  
+### Panel del explorador  
 
 El explorador de QGIS es un panel que le permite navegar fácilmente por las carpetas de su computadora o sus base de datos. Puede acceder desde este panel a archivos vectoriales comunes (ej. archivos shape de ESRI o GeoPackge), bases de datos (ej. PostGIS, Oracle, Spatialite o MYSQL Spatial) y conexiones WMS/WFS. Generalmente este panel puede no aparecer por defecto, pero podemos agregarlo a nuestro ambiente de trabajo siguiendo las instrucciones del siguiente punto.
 
-### :three: Barras de herramientas 
+### Barras de herramientas 
 
 Sus conjuntos de herramientas más utilizadas se pueden convertir en barras de herramientas para un acceso más rápido. Por ejemplo, la `barra de herramientas del proyecto` le permite guardar, abrir, imprimir e iniciar un nuevo proyecto. Puede fácilmente personalizar la interfaz para ver sólo las herramientas que use más a menudo, añadiendo o eliminando barras de herramientas según necesite al hacer un clic derecho sobre la barra de menús se abrirá un cuadro de diálogo donde se listan `Herramientas / Paneles y Barras de herramientas`, basta con seleccionarlas para que aparezcan en el ambiente de trabajo.
 
 Incluso si no son visibles en una barra de herramientas, todas sus herramientas están disponibles a través de los menús. Por ejemplo, si elimina la barra de herramientas la `barra de herramientas del proyecto` (que contiene el botón `Guardar`), aún podrá guardar su mapa al hacer clic en el menú `Proyecto` y luego en `Guardar`.
 
-### :four: Lienzo del mapa 
+### Lienzo del mapa 
 
 Aquí es donde se muestra el mapa propiamente dicho.
 
-### :five: Barra de estado 
+### Barra de estado 
 
 Muestra información sobre el mapa actual. También le permite ajustar la escala del mapa y ver las coordenadas del cursor del ratón en el mapa.
 

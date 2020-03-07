@@ -82,7 +82,30 @@ Carga las siguientes capas desde la carpeta `epsg4326/` en su mapa siguiendo el 
 
 A diferencia de los archivos shapefile, los **conjuntos de datos** te permiten guardar un gran volumen de datos asociados en un archivo. Puede que te resulte familiar un sistema de manejo de base de datos (DBMS) como Microsoft Access. Las aplicaciones SIG pueden también utilizar conjuntos de datos. SIG-específicos DBMS (como PostGIS) tienen funciones extra, ya que necesitan manejar datos espaciales. Uno de los formatos comunes de bases de datos espaciales es Spatialite, basado en el sistema de bases de datos sqlite.
 
-* Haga clic en el administrador de fuentes de datos
+* Haga clic en el administrador de fuentes de datos ![Añadir capa](/img/addLayer.png) 
+
+(Si estas seguro de no poder verlo en absoluto, comprueba que la `barra de herramientas del proyectoestá activada`.)
+
+En la ventana del administrador, seleccionar en la sección de la izquierda, “SpatiaLite”. Se abrirá la opción “Conexiones”. 
+
+* Clica el botón `Nueva`.
+* En la misma carpeta `epsg4326/`, debe encontrar el archivo `landuse.sqlite`. Selecciónelo y haga clic en `Abrir`.
+
+Ahora verá nuevamente la sección de “Conexiones”. Tenga en cuenta que el menú desplegable seleccionado antes de los tres botones ahora lee “landuse.sqlite@...”, seguido por la ruta del archivo de base de datos en su computadora.
+
+Clica en el botón `Conectar`. Deberías ver esto en la siguiente caja vacía:
+
+![SpatiaLite](/img/spatiaLite.png) 
+
+Clica en la capa `landuse` para seleccionarla, y clica `Añadir`. En el caso que surja un nuevo cuadro de diálogo del “selector del sistema de coordenadas” escriba 4326 en el campo “filtrar” y escoja WGS84 en “Sistemas de referencia de coordenadas del mundo” (más adelante se explicarán mejor estos conceptos”.
+
+![Sistema de referencia de coordenadas](/img/src.png) 
+
+```
+Nota: ¡Recuerda guardar el mapa a menudo! El archivo del mapa no contiene ninguno de los datos directamente, pero recuerda qué capas cargaste dentro de tu mapa.
+```
+
+
 
 
 

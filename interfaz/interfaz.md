@@ -124,6 +124,3 @@ Ahora que ha visto cómo funciona la interfaz de QGIS puede usar las herramienta
 
 
 
-
-
-

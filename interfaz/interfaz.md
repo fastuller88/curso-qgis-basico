@@ -86,7 +86,24 @@ Aquí es donde se muestra el mapa propiamente dicho.
 
 Muestra información sobre el mapa actual. También le permite ajustar la escala del mapa y ver las coordenadas del cursor del ratón en el mapa.
 
-### 
+### Inténtalo tú!
+
+Trate de encontrar cada una de estas herramientas en su pantalla. Algunas de ellas están en la barra de herramientas, otras en los menús y otras en la barra de estado ¿Para qué sirven? **TIP: al dejar el puntero del mouse sobre un botón, aparecerá un cuadro indicando con información.**
+
+> Nota: Si alguna de estas herramientas no está visible en su pantalla, pruebe activando algunas barras de herramientas que estén actualmente ocultas. Tenga también presente que si no hay espacio suficiente en la pantalla una barra de herramientas se puede acortar ocultando alguna de sus herramientas. Puede ver las herramientas ocultas haciendo clic en el botón con una flecha derecha en cualquier barra de herramientas que se encuentre colapsada. Puede ver un consejo con el nombre de cualquier herramienta manteniendo el ratón sobre la herramienta un instante.
+
+1. ![Zoom a la capa](img/zoomCapa.png)
+2. ![Indentificar objectos espaciales](img/info.png)
+3. ![Escala](img/escala.png)
+4. ![Medir](img/regla.png)
+
+:eyes: [Comprueba tus resultados](/respuestas/respuestas.md#resultados-para-un-resumen-de-la-interfaz)
+
+## ¿Qué sigue a continuación?
+
+Ahora que ha visto cómo funciona la interfaz de QGIS puede usar las herramientas disponibles y comenzar a mejorar su mapa. Este es el tema de la siguiente lección.
+
+
 
 
 

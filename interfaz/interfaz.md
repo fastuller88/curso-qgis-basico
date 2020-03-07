@@ -58,7 +58,7 @@ Abre un proyecto e identifica los elementos
 * Busca el botón `Abrir proyecto`: ![Abrir proyecto](img/abrir.png) 
 * Navega al archivo `trainingdata_QGIS/proyectos/general.qgz` (en el directorio de tu curso). Clica en `Abrir`. Los datos que has especificado se cargarán.
 
-:eyes: [Comprueba tus resultados](/respuestas/respuestas#resultados-para-añadiendo-tu-primera-capa)
+:eyes: [Comprueba tus resultados](/respuestas/respuestas.md#resultados-para-añadiendo-tu-primera-capa)
 
 ### :one: Panel de capas  
 

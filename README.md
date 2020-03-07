@@ -19,7 +19,7 @@ Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mej
 * [Fundamentos SIG](fundamentos/fundamentos.md). Conceptos genereales de los sistemas información geográfico.
 * [Interfaz](interfaz/interfaz.md). Breve presentación de QGIS.
 * [Goservicios](geoservicios/geoservicios.md). Conexión a servicios WMS, WFS y WCS de la OGC.
-* [Datos vectoriales y simbología](simbologia/simbologia.md). Datos vectoriales, simbología y etiquetado básico.
+* [Datos vectoriales y simbología](vectoriales/vectoriales.md). Datos vectoriales, simbología y etiquetado básico.
 * [Generación de información](vectorizacion/vectorizacion.md). Creación y edición vectorial.
 * [Calculadora de campos](calculadora/calculadora.md). Cálculo de atributos.
 * [Análisis espacial](analisis/analisis.md). Análisis de distancia y superposición.

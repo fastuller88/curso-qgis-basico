@@ -31,7 +31,7 @@ Descarga el archivo comprimido con los datos para éste curso haciendo click en 
 ### Paso a paso: Prepara un mapa
 
 * Abre QGIS. Tendrás un nuevo mapa en blanco.
-* Busca el botón __Administrador de fuente de datos__: [Añadir capa](img/addLayer.png) y haz click en él para 
+* Busca el botón __Administrador de fuente de datos__: ![Añadir capa](img/addLayer.png) y haz click en él para 
 
 
 

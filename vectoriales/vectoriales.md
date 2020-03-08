@@ -11,18 +11,18 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
     * [Paso a Paso: Cargando capas desde GeoPackages](#paso-a-paso-cargando-capas-desde-geopackages)
     * [Paso a Paso: Reordenando las Capas](#paso-a-paso-reordenando-las-capas)
     * [En Conclusión](#en-conclusion)
-    * [¿Qué sigue a continuación?](#que-sigue-a-continuacion)
+    * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 * [Simbología](#simbologia)
     * [Paso a Paso: Cambiando colores](#paso-a-paso-cambiando-colores)
-    * [Inténtalo tú!](#intentalo-tu)
+    * [Inténtalo tú!](#intentalo-tú)
     * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-simbolo)
-    * [Inténtalo tú!](#intentalo-tu)
+    * [Inténtalo tú!](#intentalo-tú)
     * [Paso a Paso: Visibilidad Basada en Escala](#paso-a-paso-visibilidad-basada-en-escala)
     * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-anadiendo-capas-de-simbolos)
-    * [Inténtalo tú!](#intentalo-tu)
+    * [Inténtalo tú!](#intentalo-tú)
     * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-simbolos)
-    * [Inténtalo tú!](#intentalo-tu)
-    * [Inténtalo tú!](#intentalo-tu)
+    * [Inténtalo tú! cambia el color](#intentalo-tú-cambia-el-color)
+    * [Inténtalo tú!](#intentalo-tú)
     * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-simbolos)
         * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-simbolos-para-puntos)
         * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-simbolos-para-lineas)
@@ -34,7 +34,7 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
     * [Capas visibles](#capas-visibles)
     * [Capas activas](#capas-activas)
     * [Inténtalo tú! Mostrar, ocultar y activar capas.](#intentalo-tu-mostrar-ocultar-y-activar-capas)
-    * [¿Qué sigue a continuación?](#que-sigue-a-continuacion)
+    * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 
 
 ## Trabajando con datos Vectoriales
@@ -146,6 +146,62 @@ Ahora has añadido todas las capas que necesitas desde muchas fuentes diferentes
 Utilizando la paleta aleatoria asignada automáticamente cuando cargas las capas, tus mapas actuales probablemente no sean fáciles de leer. Sería preferible asignar tu propia elección de colores y símbolos. Esto es lo que aprenderás a hacer en la siguiente lección.
 
 ## Simbología
+
+La simbología de una capa es su apariencia visual en el mapa. La fortaleza básica del SIG sobre otras formas de representación de datos espaciales es que con el SIG, puedes obtener una representación visual dinámica de los datos con los que estás trabajando.
+
+Además, la apariencia visual del mapa (la cual depende de la simbología de las capas individuales) es muy importante. El usuario final de los mapas que tú produces necesitará ver lo que el mapa representa con facilidad. De la misma forma, necesitarás ser capaz de explorar los datos con los que trabajas, y una buena simbología ayuda mucho.
+
+En otras palabras, tener una buena simbología no es solo un lujo o simplemente bonito. De hecho, es esencial para ti usar el SIG adecuadamente y producir mapas e información que la gente pueda usar.
+
+**El objetivo de esta lección**: Ser capaz de crear cualquier simbología que quieras para una capa vectorial.
+
+### Paso a Paso: Cambiando colores
+
+Para cambiar la simbología de una capa, abre su `Propiedades de la capa`. Empieza cambiando el color de la capa `landuse`.
+
+* Clic derecho en la capa landuse en el panel de capas.
+* Selecciona Propiedades en el menú que aparece.
+
+> Nota: Por defecto, también puedes acceder a las propiedades de la capa con doble clic en la capa en la lista de capas.
+
+En la ventana de `Propiedades`:
+
+* Selecciona la pestaña `Simbología` en el menú izquierdo:
+
+![Simbología](/img/accediendoSimbologia.png) 
+
+* Clic en el botón de selección del color al lado de la etiqueta `Color`.
+
+Un diálogo estándar de color aparecerá.
+
+* Escoge el color gris y clic en `Aceptar`.
+* Clic de nuevo en `Aceptar` en la ventana `Propiedades de la capa`, y verás el cambio de color en la capa.
+
+### Inténtalo tú! Cambia el color
+
+* Cambia el color de la capa water a azul claro.
+* Comprueba que la capa water tiene el nuevo color que le has asignado.
+
+### Paso a Paso: Cambiando la estructura del símbolo
+
+De momento está bien, pero hay más simbología en una capa además del color. Lo siguiente que queremos es eliminar las líneas entre las diferentes áreas de uso para que el mapa no esté tan visualmente desordenado.
+
+* Abre la ventana `Propiedades` de la capa para la capa `landuse`.
+
+Bajo la pestaña `Simbología`, verás el mismo tipo de diálogo que antes. Esta vez, sin embargo, harás más que cambiar rápidamente el color.
+
+* En el la sección de estructura del símbolo, expande el desplegable `Relleno` de ser necesario y selecciona la opción `Relleno sencillo (Simple fill)`.
+* Clic en el desplegable `Estilo de marca (Stroke style)`. En este momento, debería mostrar `“Línea sólida”`.
+* Cámbialo a `Sin plumilla`.
+* Clic en `Aceptar`.
+
+
+![Sin plumilla](/img/sinPlumilla.png) 
+
+Ahora los polígonos de la  capa landuse no tendrán borde y la representación visual será mejor.
+
+
+
 
 
 

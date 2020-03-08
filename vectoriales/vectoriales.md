@@ -14,15 +14,15 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
     * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 * [Simbología](#simbologia)
     * [Paso a Paso: Cambiando colores](#paso-a-paso-cambiando-colores)
-    * [Inténtalo tú! Cambia el color](#intentalo-tú-cambia-el-color)
+    * [Inténtalo tú! Cambia el color](#inténtalo-tú-cambia-el-color)
     * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-simbolo)
-    * [Inténtalo tú! Cambia el color del estilo de marca](#intentalo-tú-cambia-el-color-del-estilo-de-marca)
+    * [Inténtalo tú! Cambia el color del estilo de marca](#inténtalo-tú-cambia-el-color-del-estilo-de-marca)
     * [Paso a Paso: Visibilidad Basada en Escala](#paso-a-paso-visibilidad-basada-en-escala)
     * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-anadiendo-capas-de-simbolos)
-    * [Inténtalo tú!](#intentalo-tú)
+    * [Inténtalo tú! Cambia la textura de una capa](#inténtalo-tú-cambia-la-textura-de-una-capa)
     * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-simbolos)
-    * [Inténtalo tú! cambia el color](#intentalo-tú-cambia-el-color)
-    * [Inténtalo tú!](#intentalo-tú)
+    * [Inténtalo tú! cambia el color](#inténtalo-tú-cambia-el-color)
+    <!-- * [Inténtalo tú! Cambia la apariencia de una capa](#inténtalo-tú-cambia-la-apariencia-de-una-capa) -->
     * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-simbolos)
         * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-simbolos-para-puntos)
         * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-simbolos-para-lineas)
@@ -33,7 +33,7 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
 * [Estado de las capas](#estado-de-las-capas)
     * [Capas visibles](#capas-visibles)
     * [Capas activas](#capas-activas)
-    * [Inténtalo tú! Mostrar, ocultar y activar capas.](#intentalo-tu-mostrar-ocultar-y-activar-capas)
+    * [Inténtalo tú! Mostrar, ocultar y activar capas.](#inténtalo-tú-mostrar-ocultar-y-activar-capas)
     * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 
 
@@ -205,11 +205,11 @@ Ahora los polígonos de la  capa landuse no tendrán borde y la representación 
 * Cambia la simbología de la capa water otra vez para que tenga un trazado externo azul oscuro.
 * Cambia la simbología de la capa rivers para una representación más acorde con los ríos.
 
-Si tu eres un usuario principiante, puede detenerse aquí.
-
-* Use el método anterior para cambiar los colores y estilos a todas las capas restantes.
-* Trate de usar colores naturales para los objetos. Por ejemplo, una carretera no debería ser roja o azul, pero si puede ser gris o negro.
-* También siéntete libre de experimentar con diferentes `Estilos de Relleno` y `Estilos de borde o estilo de marca` ajustados para polígonos.
+>Si tu eres un usuario principiante, puede detenerse aquí.
+>
+>* Use el método anterior para cambiar los colores y estilos a todas las capas restantes.
+>* Trate de usar colores naturales para los objetos. Por ejemplo, una carretera no debería ser roja o azul, pero si puede ser gris o negro.
+>* También siéntete libre de experimentar con diferentes `Estilos de Relleno` y `Estilos de borde o estilo de marca` ajustados para polígonos.
 
 ### Paso a Paso: Visibilidad Basada en Escala
 
@@ -240,8 +240,69 @@ Comprueba los efectos de esto aumentando y disminuyendo el zoom de tu mapa, nota
 
 ### Paso a Paso: Añadiendo Capas de Símbolos
 
+Ahora sabes como cambiar la simbología simple de capas, el siguiente paso es crear simbología más compleja. QGIS te permite hacer esto utilizando capas de símbolos.
 
+* Regrese al panel de propiedades de símbolos `landuse` (haga clic Relleno sencillo en el panel `Capas de símbolos`).
 
+En este ejemplo, los símbolos actuales no tienen contorno (es decir, usan el estilo de borde `Sin plumilla`)
+
+Selecciona `Relleno sencillo` en la opción `Tipo de capa del símbolo`. Después clic en el botón Añadir capa de símbolos: ![Añadir](/img/anadir.png)  
+
+* Clícalo y el diálogo cambiará para parecerse a algo como esto:
+
+![Añadir capa de símbolo](/img/anadirCapaSimbolo.png) 
+
+(Por ejemplo, puede que aparezca de diferente color, pero tú vas a cambiarlo de todos modos.)
+
+Ahora hay una segunda capa de símbolos. Siendo un color sólido, por supuesto esto ocultará completamente el anterior tipo de símbolo. Además, tiene el `Wstilo de marca` `Línea sólida`, lo que no queremos. Claramente este símbolo tiene que ser cambiado.
+
+>Nota: Es importante no confundirse entre una capa de mapa y una capa de símbolos. Una capa de mapa es un vector (o raster) que ha sido cargada dentro del mapa. Una capa de símbolos es parte de un símbolo utilizado para representar una capa del mapa. Este curso se referirá por lo general a capas del mapa como una capa, pero una capa de símbolos siempre será llamada capa de símbolos, para prevenir confusión.
+
+Con la nueva capa `Relleno sencillo` seleccionada:
+
+* Ajusta el estilo de borde a `Sin plumilla`, como antes.
+* Cambia el estilo de relleno a algo diferente a `Sólido` o `Sin relleno`. Por ejemplo `Diagonal` o `Denso`:
+
+![Añadir capa de símbolo denso](/img/capaSimboloDenso.png) 
+
+* Clic en Aceptar. Ahora puedes ver tus resultados y ajustarlos como necesites.
+
+Puedes incluso añadir múltiples capas de símbolos extra y crear un nuevo tipo de textura para tu capa de este modo.
+
+![Añadir varios capa de símbolo](/img/capaSimboloVarios.png) 
+
+¡Es divertido! Pero probablemente tenga demasiados colores para usar en el mapa real...
+
+### :pencil2: Inténtalo tú! Cambia la textura de una capa
+
+* Recordando ampliar si es necesario, crea una textura simple para la capa `buildings` utilizando los métodos anteriores.
+
+> Personaliza tu buildings capa como gustes, pero recuerda que tiene que ser fácil de contar las diferentes partes del mapa y verse genial :sunglasses:
+
+### Paso a Paso: Ordenando los Niveles de Símbolos
+
+Cuando las capas de símbolos están representadas, también están representadas en una secuencia, similar a la forma en la que diferentes capas del mapa se representan. 
+
+Por ejemplo, queremos dar a las calles un símbolo como este:![Calles](/img/street.png). Este es un símbolo compuesto por dos “capas de símbolos”. La primera capa es una línea negra gruesa y la segunda capa una línea blanca de guiones.
+
+* En la capa `roads` una capa símbolo extra (utilizando el método para añadir capas símbolo demostrado anteriormente).
+* Dale a la nueva capa de símbolo superior un `Ancho de marca` de 0.2, color blanco y selecciona `Línea de guiones` del menú desplegable `Estilo de plumilla (Stroke style)`.
+* Dale a la capa de símbolo inferior un grosor de 1.3 y asegúrate de que es una `Línea sólida`.
+
+![Añadir varios capa de símbolo vías](/img/capaSimboloVarios.png) 
+
+>Si cambias el orden de las capas de símbolo notarás que la línea negra sólida cubre a la línea blanca de guiones y no se visualiza correctamente. Para prevenir que esto ocurra, puedes ordenar los niveles de símbolos y de este modo controlar el orden en el que las diferentes capas de símbolos se representan.
+Para cambiar el orden de la capa de símbolos, seleccione la línea blanca de guiones en el estilo de la capa y haga click en el botón “subir” para colocarla sobre la línea negra.
+
+![Añadir varios capa de símbolo vías vista](/img/capaSimboloVistaVias.png) 
+
+Cuando hayas terminado, recuerda guardar el símbolo para no perder tu trabajo si lo vuelves a cambiar en el futuro. Puedes guardar tu actual estilo de símbolo con clic en el botón `Guardar estilo` bajo el botón  `Estilo` que se encuentra en la parte inferior izquierda del cuadro de diálogo. Generalmente, deberías guardar como `Archivo de estilo de capa de QGIS`.
+
+Guarda tu estilo en `trainingdata_QGIS/styles`. Puedes cargar estilos guardados previamente en cualquier momento con clic en el botón `Cargar estilo`.... Antes de cambiar un estilo, ten en mente que cualquier estilo no guardado que reemplaces se perderá.
+
+### :pencil2: Inténtalo tú! Cambia la apariencia de una capa
+
+* Cambia de nuevo la apariencia de la capa `roads`. Las calles deben ser estrechas y grises, con un fino contorno amarillo.
 
 
 

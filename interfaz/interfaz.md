@@ -38,7 +38,7 @@ Aquí hay solo algunas de las razones:
 
 > Nota: Antes de comenzar este ejercicio, QGIS debe estar instalado en su computadora.
 
-Descarga el archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS_cuenca](https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS_cuenca.zip). Debes descomprimir el archivo en una carpeta en tu disco duro antes de comenzar a trabajar.
+Descarga el archivo comprimido con los datos para éste curso haciendo click en el siguiente enlace: [trainingdata_QGIS](https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS.zip). Debes descomprimir el archivo en una carpeta en tu disco duro antes de comenzar a trabajar.
 
 > Nota: Las capturas de pantalla para este curso se tomaron utilizando  QGIS 3.10. Dependiendo de tu instalación, las pantallas que encontrarás puede que sean algo diferentes. Sin embargo, los mismos botones estarán disponibles, y las instrucciones funcionarán en cualquier SO. Necesitarás QGIS 3.10 (la versión más reciente al momento de la escritura) para usar este curso. Si algo no corresponde a lo que aparece en el programa, puede ser que aún el manual no esté actualizado. Por favor contactar al autor: johnatan.astudillo@gmail.com para solicitar la correspondiente actualización del material.
 
@@ -52,7 +52,7 @@ Descarga el archivo comprimido con los datos para éste curso haciendo click en 
 ¡Enhorabuena! :+1:  Ya tienes un nuevo mapa básico. Ahora sería un buen momento para guardar tu trabajo.
 
 * Haga clic en el botón `Guardar Proyecto`...:![Guardar Proyecto](/img/guardar.png)
-* Guarda el mapa en `exercise_data/` y nómbralo `mi_primer_mapa.qgz`.
+* Guarda el mapa en `exercise_data` y nómbralo `mi_primer_mapa.qgz`.
 
 ## Una vista general de la interfaz
 

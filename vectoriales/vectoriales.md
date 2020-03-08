@@ -64,19 +64,19 @@ Los datos vectoriales representan elementos en términos de puntos, líneas y po
 
 El **Archivo Shape** es un formato específico de archivo que te permite guardar datos SIG en grupos de archivos asociados. Cada capa consiste en muchos archivos con el mismo nombre, pero diferentes tipos de archivo. 
 
-Por ejemplo, en la carpeta `epsg4326/` hay varias capas: “places”, “rivers”, “roads”, etc. Cada una de esas capas está compuesta de varios archivos: ej: roads.dbf, roads.prj, roads.shp, etc… Es importante saber que todos los archivos son necesarios para abrir la capa, por lo que si quieres copiar una capa a otra carpeta o computadora, es necesario copiar todos los archivos que tengan el mismo nombre.
+Por ejemplo, en la carpeta `epsg4326` hay varias capas: “places”, “rivers”, “roads”, etc. Cada una de esas capas está compuesta de varios archivos: ej: roads.dbf, roads.prj, roads.shp, etc… Es importante saber que todos los archivos son necesarios para abrir la capa, por lo que si quieres copiar una capa a otra carpeta o computadora, es necesario copiar todos los archivos que tengan el mismo nombre.
 
 ![Archivos shape](/img/archivosShape.png)
 
 Los Archivos Shape son bastante comunes pero son anticuados y en varios casos difíciles de manejar, por lo que en la actualidad se suelen trabajar con otros tipos de archivos, tales como conjuntos de datos **spatialite**, **bases de datos**, o **geopackage**. 
 
 Si no sabes como añadir una capa vectorial, regresa al [ejercicio introductorio](/interfaz/interfaz.md#anadiendo-tu-primera-capa).
-Carga las siguientes capas desde la carpeta `epsg4326/` en su mapa siguiendo el mismo método:
+Carga las siguientes capas desde la carpeta `epsg4326` en su mapa siguiendo el mismo método:
 
-“places”
-“water”
-“rivers”
-“buildings”
+* “places”
+* “water”
+* “rivers”
+* “buildings”
 
 ### Paso a Paso: Cargando Datos Vectoriales desde un Conjunto de Datos Spatialite
 
@@ -89,7 +89,7 @@ A diferencia de los archivos shapefile, los **conjuntos de datos** te permiten g
 En la ventana del administrador, seleccionar en la sección de la izquierda, “SpatiaLite”. Se abrirá la opción “Conexiones”. 
 
 * Clica el botón `Nueva`.
-* En la misma carpeta `epsg4326/`, debe encontrar el archivo `landuse.sqlite`. Selecciónelo y haga clic en `Abrir`.
+* En la misma carpeta `epsg4326`, debe encontrar el archivo `landuse.sqlite`. Selecciónelo y haga clic en `Abrir`.
 
 Ahora verá nuevamente la sección de “Conexiones”. Tenga en cuenta que el menú desplegable seleccionado antes de los tres botones ahora lee “landuse.sqlite@...”, seguido por la ruta del archivo de base de datos en su computadora.
 
@@ -101,12 +101,27 @@ Clica en la capa `landuse` para seleccionarla, y clica `Añadir`. En el caso que
 
 ![Sistema de referencia de coordenadas](/img/src.png) 
 
-```
-Nota: ¡Recuerda guardar el mapa a menudo! El archivo del mapa no contiene ninguno de los datos directamente, pero recuerda qué capas cargaste dentro de tu mapa.
-```
+> Nota: ¡Recuerda guardar el mapa a menudo! El archivo del mapa no contiene ninguno de los datos directamente, pero recuerda qué capas cargaste dentro de tu mapa.
 
 
+### Paso a Paso: Cargando capas desde GeoPackages
 
+Uno de los formatos más avanzados para almacenamiento de datos geográficos el el formato GeoPackage. Este formato también está basado en SpatiaLite, pero permite en un solo archivo gestionar datos, estilos de simbología, proyectos de QGIS, y muchas otras cosas. Es muy conveniente ya que en un solo archivo se puede almacenar todo y abrirlo en diferentes tipos software. Además evita el problema de trasladar archivos y carpetas entre diferentes computadores y facilita los respaldos.
+
+* Inicia un proyecto nuevo de QGIS y abre el panel de navegador.
+* Navega hasta tu carpeta de datos y  abre la carpeta `epsg32717`. Encontrarás un archivo area_estudio. 
+
+> Nota: si no tienes éste archivo, puedes descargarlo la carpeta con los datos directamente desde  el siguiente enlace: [trainingdata_QGIS](https://github.com/fastuller88/curso-qgis-basico/raw/master/data/trainingdata_QGIS.zip). Debes descomprimir el archivo en una carpeta en tu disco duro  antes de comenzar a trabajar.
+
+* Este archivo es una base de datos geopackage. Haz click en la flecha desde el panel de navegador de QGIS para desplegar sus contenidos
+
+* Verás que contiene las mismas capas que están en la otra carpeta como shapefile.
+
+![Importar geopackage](/img/geopackage.png) 
+
+* Haz doble click en cada capa para añadirla al mapa. Verás que las añadidas tienen ya una simbología asignada, ya que fueron guardadas con su simbología en la base de datos geopackage.
+
+![Capas cargadas desde geopackage](/img/capasCargadas.png) 
 
 
 

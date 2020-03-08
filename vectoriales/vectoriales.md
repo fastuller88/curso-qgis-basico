@@ -14,9 +14,9 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
     * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 * [Simbología](#simbologia)
     * [Paso a Paso: Cambiando colores](#paso-a-paso-cambiando-colores)
-    * [Inténtalo tú!](#intentalo-tú)
+    * [Inténtalo tú! Cambia el color](#intentalo-tú-cambia-el-color)
     * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-simbolo)
-    * [Inténtalo tú!](#intentalo-tú)
+    * [Inténtalo tú! Cambia el color del estilo de marca](#intentalo-tú-cambia-el-color-del-estilo-de-marca)
     * [Paso a Paso: Visibilidad Basada en Escala](#paso-a-paso-visibilidad-basada-en-escala)
     * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-anadiendo-capas-de-simbolos)
     * [Inténtalo tú!](#intentalo-tú)
@@ -177,7 +177,7 @@ Un diálogo estándar de color aparecerá.
 * Escoge el color gris y clic en `Aceptar`.
 * Clic de nuevo en `Aceptar` en la ventana `Propiedades de la capa`, y verás el cambio de color en la capa.
 
-### Inténtalo tú! Cambia el color
+### :pencil2: Inténtalo tú! Cambia el color
 
 * Cambia el color de la capa water a azul claro.
 * Comprueba que la capa water tiene el nuevo color que le has asignado.
@@ -199,6 +199,46 @@ Bajo la pestaña `Simbología`, verás el mismo tipo de diálogo que antes. Esta
 ![Sin plumilla](/img/sinPlumilla.png) 
 
 Ahora los polígonos de la  capa landuse no tendrán borde y la representación visual será mejor.
+
+### :pencil2: Inténtalo tú! Cambia el color del estilo de marca
+
+* Cambia la simbología de la capa water otra vez para que tenga un trazado externo azul oscuro.
+* Cambia la simbología de la capa rivers para una representación más acorde con los ríos.
+
+Si tu eres un usuario principiante, puede detenerse aquí.
+
+* Use el método anterior para cambiar los colores y estilos a todas las capas restantes.
+* Trate de usar colores naturales para los objetos. Por ejemplo, una carretera no debería ser roja o azul, pero si puede ser gris o negro.
+* También siéntete libre de experimentar con diferentes `Estilos de Relleno` y `Estilos de borde o estilo de marca` ajustados para polígonos.
+
+### Paso a Paso: Visibilidad Basada en Escala
+
+Algunas veces encontrarás que una capa no es adecuada para una escala dada. Por ejemplo, un conjunto de datos de todos los continentes puede tener pocos detalles, y no ser muy preciso a nivel de calles. Cuando esto ocurre, quieres ser capaz de ocultar el conjunto de datos a escalas inapropiadas.
+
+En nuestro caso, puede que decidamos ocultar las construcciones vistas a pequeñas escalas. Este mapa, por ejemplo...
+
+![Simbología a escala](/img/simbologiaEscala.png) 
+
+... no es muy útil. Las construcciones difícilmente se distinguen a esa escala.
+
+Para habilitar la representación basada en escala:
+
+* Abre el diálogo `Propiedades de la capa` para la capa `buildings`.
+* Activa la pestaña `Representación`.
+* Habilite la representación basada en escala haciendo clic en la casilla de verificación llamada `Visibilidad dependiente de la escala`:
+
+![Simbología a escala mínimo](/img/simbologiaEscalaMin.png) 
+
+* Cambie el valor Mínimo a 1:10.000.
+* Clic en Aceptar.
+
+Comprueba los efectos de esto aumentando y disminuyendo el zoom de tu mapa, notando que la capa buildings aparece y desaparece.
+
+> Nota: Puedes usar la rueda de tu ratón para ampliar o disminuir el zoom. También puedes utilizar las herramientas de zoom para ampliar el mapa usando un recuadro:
+>
+> ![Zoom](/img/zomInOut.png)  
+
+### Paso a Paso: Añadiendo Capas de Símbolos
 
 
 

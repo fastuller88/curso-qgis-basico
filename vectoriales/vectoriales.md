@@ -123,5 +123,29 @@ Uno de los formatos más avanzados para almacenamiento de datos geográficos el 
 
 ![Capas cargadas desde geopackage](/img/capasCargadas.png) 
 
+### Paso a Paso: Reordenando las Capas
+
+Las capas en tu lista de Capas están dibujadas en el mapa en cierto orden. La capa de abajo de la lista está dibujada primero, y la capa de la parte superior de la lista es la última dibujada. Cambiando el orden de la lista, puedes cambiar el orden en el que dibujan en el mapa.
+
+El orden en el que las capas se han cargado en el mapa probablemente no sea lógico en este punto. Es posible que la capa roads esté completamente escondida porque otras capas estén por encima de ella.
+
+Para resolver este problema:
+
+* Clica y arrastra sobre una capa y arrastrala en la lista de Capas. La norma general es que los capas tipo polígono vayan al fondo de la lista, luego las capas tipo línea y por encima los puntos.
+
+![Capas ordenadas](/img/leyendaOrdenada.png) 
+
+Verás que el mapa ahora tiene más sentido visual, con calles y construcciones apareciendo sobre las regiones del territorio.
+
+### En Conclusión
+
+Ahora has añadido todas las capas que necesitas desde muchas fuentes diferentes.
+
+### ¿Qué sigue a continuación?
+
+Utilizando la paleta aleatoria asignada automáticamente cuando cargas las capas, tus mapas actuales probablemente no sean fáciles de leer. Sería preferible asignar tu propia elección de colores y símbolos. Esto es lo que aprenderás a hacer en la siguiente lección.
+
+## Simbología
+
 
 

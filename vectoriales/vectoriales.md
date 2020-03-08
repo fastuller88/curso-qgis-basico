@@ -15,18 +15,18 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
 * [Simbología](#simbologia)
     * [Paso a Paso: Cambiando colores](#paso-a-paso-cambiando-colores)
     * [Inténtalo tú! Cambia el color](#inténtalo-tú-cambia-el-color)
-    * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-simbolo)
+    * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-siímbolo)
     * [Inténtalo tú! Cambia el color del estilo de marca](#inténtalo-tú-cambia-el-color-del-estilo-de-marca)
     * [Paso a Paso: Visibilidad Basada en Escala](#paso-a-paso-visibilidad-basada-en-escala)
-    * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-anadiendo-capas-de-simbolos)
+    * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-añadiendo-capas-de-símbolos)
     * [Inténtalo tú! Cambia la textura de una capa](#inténtalo-tú-cambia-la-textura-de-una-capa)
-    * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-simbolos)
+    * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-símbolos)
     * [Inténtalo tú! cambia el color](#inténtalo-tú-cambia-el-color)
     <!-- * [Inténtalo tú! Cambia la apariencia de una capa](#inténtalo-tú-cambia-la-apariencia-de-una-capa) -->
-    * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-simbolos)
-        * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-simbolos-para-puntos)
-        * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-simbolos-para-lineas)
-        * [Tipos de Capas de Símbolos para Polígonos](#tipos-de-capas-de-simbolos-para-poligonos)
+    * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-símbolos)
+        * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-símbolos-para-puntos)
+        * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-símbolos-para-lineas)
+        * [Tipos de Capas de Símbolos para Polígonos](#tipos-de-capas-de-símbolos-para-polígonos)
     * [(OPCIONAL) Paso a Paso: Creando un Relleno SVG Personalizado](#opcional-paso-a-paso-creando-un-relleno-svg-personalizado)
     * [En Conclusión](#en-conclusion)
     * [Más lecturas…](#mas-lecturas)
@@ -70,7 +70,7 @@ Por ejemplo, en la carpeta `epsg4326` hay varias capas: “places”, “rivers�
 
 Los Archivos Shape son bastante comunes pero son anticuados y en varios casos difíciles de manejar, por lo que en la actualidad se suelen trabajar con otros tipos de archivos, tales como conjuntos de datos **spatialite**, **bases de datos**, o **geopackage**. 
 
-Si no sabes como añadir una capa vectorial, regresa al [ejercicio introductorio](/interfaz/interfaz.md#anadiendo-tu-primera-capa).
+Si no sabes como añadir una capa vectorial, regresa al [ejercicio introductorio](/interfaz/interfaz.md#añadiendo-tu-primera-capa).
 Carga las siguientes capas desde la carpeta `epsg4326` en su mapa siguiendo el mismo método:
 
 * “places”
@@ -200,7 +200,7 @@ Bajo la pestaña `Simbología`, verás el mismo tipo de diálogo que antes. Esta
 
 Ahora los polígonos de la  capa landuse no tendrán borde y la representación visual será mejor.
 
-### :pencil2: Inténtalo tú! Cambia el color del estilo de marca
+### Inténtalo tú! Cambia el color del estilo de marca
 
 * Cambia la simbología de la capa water otra vez para que tenga un trazado externo azul oscuro.
 * Cambia la simbología de la capa rivers para una representación más acorde con los ríos.

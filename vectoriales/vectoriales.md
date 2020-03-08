@@ -14,15 +14,15 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
     * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 * [Simbología](#simbologia)
     * [Paso a Paso: Cambiando colores](#paso-a-paso-cambiando-colores)
-    * [Inténtalo tú! Cambia el color](#inténtalo-tú-cambia-el-color)
+    * [Inténtalo tú! Cambia el color](#pencil2-inténtalo-tú-cambia-el-color)
     * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-siímbolo)
-    * [Inténtalo tú! Cambia el color del estilo de marca](#inténtalo-tú-cambia-el-color-del-estilo-de-marca)
+    * [Inténtalo tú! Cambia el color del estilo de marca](#pencil2-inténtalo-tú-cambia-el-color-del-estilo-de-marca)
     * [Paso a Paso: Visibilidad Basada en Escala](#paso-a-paso-visibilidad-basada-en-escala)
     * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-añadiendo-capas-de-símbolos)
-    * [Inténtalo tú! Cambia la textura de una capa](#inténtalo-tú-cambia-la-textura-de-una-capa)
+    * [Inténtalo tú! Cambia la textura de una capa](#pencil2-inténtalo-tú-cambia-la-textura-de-una-capa)
     * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-símbolos)
-    * [Inténtalo tú! cambia el color](#inténtalo-tú-cambia-el-color)
-    <!-- * [Inténtalo tú! Cambia la apariencia de una capa](#inténtalo-tú-cambia-la-apariencia-de-una-capa) -->
+    * [Inténtalo tú! cambia el color](#pencil2-inténtalo-tú-cambia-el-color)
+    <!-- * [Inténtalo tú! Cambia la apariencia de una capa](#pencil2-inténtalo-tú-cambia-la-apariencia-de-una-capa) -->
     * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-símbolos)
         * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-símbolos-para-puntos)
         * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-símbolos-para-lineas)
@@ -33,7 +33,7 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
 * [Estado de las capas](#estado-de-las-capas)
     * [Capas visibles](#capas-visibles)
     * [Capas activas](#capas-activas)
-    * [Inténtalo tú! Mostrar, ocultar y activar capas.](#inténtalo-tú-mostrar-ocultar-y-activar-capas)
+    * [Inténtalo tú! Mostrar, ocultar y activar capas.](#pencil2-inténtalo-tú-mostrar-ocultar-y-activar-capas)
     * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 
 
@@ -304,5 +304,6 @@ Guarda tu estilo en `trainingdata_QGIS/styles`. Puedes cargar estilos guardados 
 
 * Cambia de nuevo la apariencia de la capa `roads`. Las calles deben ser estrechas y grises, con un fino contorno amarillo.
 
+### Paso a Paso: Tipos de Capas de Símbolos
 
 

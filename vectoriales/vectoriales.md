@@ -1,46 +1,46 @@
-# Creación de un Mapa Básico
+# 3. Datos vectoriales y simbología
 
 En este módulo, crearás un mapa básico, que se utilizará más tarde como la base para más demostraciones de las funcionalidades de QGIS.
 
 ## Contenidos
+* [3. Datos vectoriales y simbología](#3-datos-vectoriales-y-simbología)
+    - [3.1. Trabajando con datos Vectoriales](#31-trabajando-con-datos-vectoriales)
+        - [3.1.1. Paso a Paso: Viendo los Atributos de la Capa](#311-paso-a-paso-viendo-los-atributos-de-la-capa)
+        - [3.1.2. Paso a Paso: Cargando Datos Vectoriales Desde Archivos Shape](#312-paso-a-paso-cargando-datos-vectoriales-desde-archivos-shape)
+        - [3.1.3. Paso a Paso: Cargando Datos Vectoriales desde un Conjunto de Datos Spatialite](#313-paso-a-paso-cargando-datos-vectoriales-desde-un-conjunto-de-datos-spatialite)
+        - [3.1.4. Paso a Paso: Cargando capas desde GeoPackages](#314-paso-a-paso-cargando-capas-desde-geopackages)
+        - [3.1.5. Paso a Paso: Reordenando las Capas](#315-paso-a-paso-reordenando-las-capas)
+        - [3.1.6. En Conclusión](#316-en-conclusion)
+        - [3.1.7. ¿Qué sigue a continuación?](#317-qué-sigue-a-continuación)
+    - [3.2. Simbología](#32-simbologia)
+        - [3.2.1. Paso a Paso: Cambiando colores](#321-paso-a-paso-cambiando-colores)
+        - [3.2.2. Inténtalo tú! Cambia el color](#322-pencil2-inténtalo-tú-cambia-el-color)
+        - [3.2.3. Paso a Paso: Cambiando la estructura del símbolo](#323-paso-a-paso-cambiando-la-estructura-del-siímbolo)
+        - [3.2.4. Inténtalo tú! Cambia el color del estilo de marca](#324-pencil2-inténtalo-tú-cambia-el-color-del-estilo-de-marca)
+        - [3.2.5. Paso a Paso: Visibilidad Basada en Escala](#325-paso-a-paso-visibilidad-basada-en-escala)
+        - [3.2.6. Paso a Paso: Añadiendo Capas de Símbolos](#326-paso-a-paso-añadiendo-capas-de-símbolos)
+        - [3.2.7. Inténtalo tú! Cambia la textura de una capa](#327-pencil2-inténtalo-tú-cambia-la-textura-de-una-capa)
+        - [3.2.8. Paso a Paso: Ordenando los Niveles de Símbolos](#328-paso-a-paso-ordenando-los-niveles-de-símbolos)
+        - [3.2.9. Inténtalo tú! Cambia la apariencia de una capa](#329-pencil2-cambia-la-apariencia-de-una-capa)
+        - [3.2.10. Paso a Paso: Tipos de Capas de Símbolos](#3210-paso-a-paso-tipos-de-capas-de-símbolos)
+            - [3.2.10.1 Tipos de Capas de Símbolos para Puntos](#32101-tipos-de-capas-de-símbolos-para-puntos)
+            - [3.2.10.2 Tipos de Capas de Símbolos para Líneas](#32102-tipos-de-capas-de-símbolos-para-lineas)
+            - [3.2.10.3 Tipos de Capas de Símbolos para Polígonos](#3213-tipos-de-capas-de-símbolos-para-polígonos)
+        - [3.2.11. En Conclusión](#3211-en-conclusión)
+        - [3.2.12. Más lecturas…](#3212-más-lecturas)
+    - [3.3. Estado de las capas](#33-estado-de-las-capas)
+        - [3.3.1 Capas visibles](#331-capas-visibles)
+        - [3.3.2 Capas activas](#332-capas-activas)
+        - [3.3.3 Inténtalo tú! Mostrar, ocultar y activar capas.](#333-pencil2-inténtalo-tú-mostrar-ocultar-y-activar-capas)
+        - [3.3.4 ¿Qué sigue a continuación?](#334-qué-sigue-a-continuación)
 
-* [Trabajando con datos Vectoriales](#trabajando-con-datos-vectoriales)
-    * [Paso a Paso: Viendo los Atributos de la Capa](#paso-a-paso-viendo-los-atributos-de-la-capa)
-    * [Paso a Paso: Cargando Datos Vectoriales Desde Archivos Shape](#paso-a-paso-cargando-datos-vectoriales-desde-archivos-shape)
-    * [Paso a Paso: Cargando Datos Vectoriales desde un Conjunto de Datos Spatialite](#paso-a-paso-cargando-datos-vectoriales-desde-un-conjunto-de-datos-spatialite)
-    * [Paso a Paso: Cargando capas desde GeoPackages](#paso-a-paso-cargando-capas-desde-geopackages)
-    * [Paso a Paso: Reordenando las Capas](#paso-a-paso-reordenando-las-capas)
-    * [En Conclusión](#en-conclusion)
-    * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
-* [Simbología](#simbologia)
-    * [Paso a Paso: Cambiando colores](#paso-a-paso-cambiando-colores)
-    * [Inténtalo tú! Cambia el color](#pencil2-inténtalo-tú-cambia-el-color)
-    * [Paso a Paso: Cambiando la estructura del símbolo](#paso-a-paso-cambiando-la-estructura-del-siímbolo)
-    * [Inténtalo tú! Cambia el color del estilo de marca](#pencil2-inténtalo-tú-cambia-el-color-del-estilo-de-marca)
-    * [Paso a Paso: Visibilidad Basada en Escala](#paso-a-paso-visibilidad-basada-en-escala)
-    * [Paso a Paso: Añadiendo Capas de Símbolos](#paso-a-paso-añadiendo-capas-de-símbolos)
-    * [Inténtalo tú! Cambia la textura de una capa](#pencil2-inténtalo-tú-cambia-la-textura-de-una-capa)
-    * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-símbolos)
-    * [Inténtalo tú! cambia el color](#pencil2-inténtalo-tú-cambia-el-color)
-    * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-símbolos)
-        * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-símbolos-para-puntos)
-        * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-símbolos-para-lineas)
-        * [Tipos de Capas de Símbolos para Polígonos](#tipos-de-capas-de-símbolos-para-polígonos)
-    * [En Conclusión](#en-conclusion)
-    * [Más lecturas…](#mas-lecturas)
-* [Estado de las capas](#estado-de-las-capas)
-    * [Capas visibles](#capas-visibles)
-    * [Capas activas](#capas-activas)
-    * [Inténtalo tú! Mostrar, ocultar y activar capas.](#pencil2-inténtalo-tú-mostrar-ocultar-y-activar-capas)
-    * [¿Qué sigue a continuación?](#qué-sigue-a-continuación)
 
-
-## Trabajando con datos Vectoriales
+## 3.1 Trabajando con datos Vectoriales
 Los datos vectoriales son posiblemente el tipo más común de los datos que se encuentran en el uso diario de los SIG. En él se describen los datos geográficos en términos de puntos, que se puede conectar a las líneas y polígonos. Cada objeto en un conjunto de datos de vectores se llama una **característica**, y se asocia con los datos que describe esa característica.
 
 **El objetivo de esta lección**. Aprender acerca de la estructura de los datos vectoriales, y cómo cargar un conjunto de datos vectoriales dentro de un mapa.
 
-### Paso a Paso: Viendo los Atributos de la Capa
+### 3.1.1 Paso a Paso: Viendo los Atributos de la Capa
 
 Es importante saber que los datos con los que estarás trabajando no solo representan **dónde** están los objetos espacialmente, sino también te dicen **qué** son esos objetos.
 
@@ -58,7 +58,7 @@ Estas definiciones se usan comúnmente en SIG, ¡por eso es esencial recordarlas
 
 Los datos vectoriales representan elementos en términos de puntos, líneas y polígonos en un plano de coordenadas. Esto es usado normalmente para guardar elementos discretos, como calles, manzanas, parques o restaurantes.
 
-### Paso a Paso: Cargando Datos Vectoriales Desde Archivos Shape
+### 3.1.2 Paso a Paso: Cargando Datos Vectoriales Desde Archivos Shape
 
 El **Archivo Shape** es un formato específico de archivo que te permite guardar datos SIG en grupos de archivos asociados. Cada capa consiste en muchos archivos con el mismo nombre, pero diferentes tipos de archivo. 
 
@@ -76,7 +76,7 @@ Carga las siguientes capas desde la carpeta `epsg4326` en su mapa siguiendo el m
 * “rivers”
 * “buildings”
 
-### Paso a Paso: Cargando Datos Vectoriales desde un Conjunto de Datos Spatialite
+### 3.1.3 Paso a Paso: Cargando Datos Vectoriales desde un Conjunto de Datos Spatialite
 
 A diferencia de los archivos shapefile, los **conjuntos de datos** te permiten guardar un gran volumen de datos asociados en un archivo. Puede que te resulte familiar un sistema de manejo de base de datos (DBMS) como Microsoft Access. Las aplicaciones SIG pueden también utilizar conjuntos de datos. SIG-específicos DBMS (como PostGIS) tienen funciones extra, ya que necesitan manejar datos espaciales. Uno de los formatos comunes de bases de datos espaciales es Spatialite, basado en el sistema de bases de datos sqlite.
 
@@ -102,7 +102,7 @@ Clica en la capa `landuse` para seleccionarla, y clica `Añadir`. En el caso que
 > Nota: ¡Recuerda guardar el mapa a menudo! El archivo del mapa no contiene ninguno de los datos directamente, pero recuerda qué capas cargaste dentro de tu mapa.
 
 
-### Paso a Paso: Cargando capas desde GeoPackages
+### 3.1.4 Paso a Paso: Cargando capas desde GeoPackages
 
 Uno de los formatos más avanzados para almacenamiento de datos geográficos el el formato GeoPackage. Este formato también está basado en SpatiaLite, pero permite en un solo archivo gestionar datos, estilos de simbología, proyectos de QGIS, y muchas otras cosas. Es muy conveniente ya que en un solo archivo se puede almacenar todo y abrirlo en diferentes tipos software. Además evita el problema de trasladar archivos y carpetas entre diferentes computadores y facilita los respaldos.
 
@@ -121,7 +121,7 @@ Uno de los formatos más avanzados para almacenamiento de datos geográficos el 
 
 ![Capas cargadas desde geopackage](/img/capasCargadas.png) 
 
-### Paso a Paso: Reordenando las Capas
+### 3.1.5 Paso a Paso: Reordenando las Capas
 
 Las capas en tu lista de Capas están dibujadas en el mapa en cierto orden. La capa de abajo de la lista está dibujada primero, y la capa de la parte superior de la lista es la última dibujada. Cambiando el orden de la lista, puedes cambiar el orden en el que dibujan en el mapa.
 
@@ -135,15 +135,15 @@ Para resolver este problema:
 
 Verás que el mapa ahora tiene más sentido visual, con calles y construcciones apareciendo sobre las regiones del territorio.
 
-### En Conclusión
+### 3.1.6 En Conclusión
 
 Ahora has añadido todas las capas que necesitas desde muchas fuentes diferentes.
 
-### ¿Qué sigue a continuación?
+### 3.1.7 ¿Qué sigue a continuación?
 
 Utilizando la paleta aleatoria asignada automáticamente cuando cargas las capas, tus mapas actuales probablemente no sean fáciles de leer. Sería preferible asignar tu propia elección de colores y símbolos. Esto es lo que aprenderás a hacer en la siguiente lección.
 
-## Simbología
+## 3.2 Simbología
 
 La simbología de una capa es su apariencia visual en el mapa. La fortaleza básica del SIG sobre otras formas de representación de datos espaciales es que con el SIG, puedes obtener una representación visual dinámica de los datos con los que estás trabajando.
 
@@ -153,7 +153,7 @@ En otras palabras, tener una buena simbología no es solo un lujo o simplemente 
 
 **El objetivo de esta lección**: Ser capaz de crear cualquier simbología que quieras para una capa vectorial.
 
-### Paso a Paso: Cambiando colores
+### 3.2.1. Paso a Paso: Cambiando colores
 
 Para cambiar la simbología de una capa, abre su `Propiedades de la capa`. Empieza cambiando el color de la capa `landuse`.
 
@@ -175,12 +175,12 @@ Un diálogo estándar de color aparecerá.
 * Escoge el color gris y clic en `Aceptar`.
 * Clic de nuevo en `Aceptar` en la ventana `Propiedades de la capa`, y verás el cambio de color en la capa.
 
-### :pencil2: Inténtalo tú! Cambia el color
+### 3.2.2. :pencil2: Inténtalo tú! Cambia el color
 
 * Cambia el color de la capa water a azul claro.
 * Comprueba que la capa water tiene el nuevo color que le has asignado.
 
-### Paso a Paso: Cambiando la estructura del símbolo
+### 3.2.3. Paso a Paso: Cambiando la estructura del símbolo
 
 De momento está bien, pero hay más simbología en una capa además del color. Lo siguiente que queremos es eliminar las líneas entre las diferentes áreas de uso para que el mapa no esté tan visualmente desordenado.
 
@@ -198,7 +198,7 @@ Bajo la pestaña `Simbología`, verás el mismo tipo de diálogo que antes. Esta
 
 Ahora los polígonos de la  capa landuse no tendrán borde y la representación visual será mejor.
 
-### Inténtalo tú! Cambia el color del estilo de marca
+### 3.2.4. Inténtalo tú! Cambia el color del estilo de marca
 
 * Cambia la simbología de la capa water otra vez para que tenga un trazado externo azul oscuro.
 * Cambia la simbología de la capa rivers para una representación más acorde con los ríos.
@@ -209,7 +209,7 @@ Ahora los polígonos de la  capa landuse no tendrán borde y la representación 
 >* Trate de usar colores naturales para los objetos. Por ejemplo, una carretera no debería ser roja o azul, pero si puede ser gris o negro.
 >* También siéntete libre de experimentar con diferentes `Estilos de Relleno` y `Estilos de borde o estilo de marca` ajustados para polígonos.
 
-### Paso a Paso: Visibilidad Basada en Escala
+### 3.2.5. Paso a Paso: Visibilidad Basada en Escala
 
 Algunas veces encontrarás que una capa no es adecuada para una escala dada. Por ejemplo, un conjunto de datos de todos los continentes puede tener pocos detalles, y no ser muy preciso a nivel de calles. Cuando esto ocurre, quieres ser capaz de ocultar el conjunto de datos a escalas inapropiadas.
 
@@ -236,7 +236,7 @@ Comprueba los efectos de esto aumentando y disminuyendo el zoom de tu mapa, nota
 >
 > ![Zoom](/img/zomInOut.png)  
 
-### Paso a Paso: Añadiendo Capas de Símbolos
+### 3.2.6. Paso a Paso: Añadiendo Capas de Símbolos
 
 Ahora sabes como cambiar la simbología simple de capas, el siguiente paso es crear simbología más compleja. QGIS te permite hacer esto utilizando capas de símbolos.
 
@@ -271,13 +271,13 @@ Puedes incluso añadir múltiples capas de símbolos extra y crear un nuevo tipo
 
 ¡Es divertido! Pero probablemente tenga demasiados colores para usar en el mapa real...
 
-### :pencil2: Inténtalo tú! Cambia la textura de una capa
+### 3.2.7. :pencil2: Inténtalo tú! Cambia la textura de una capa
 
 * Recordando ampliar si es necesario, crea una textura simple para la capa `buildings` utilizando los métodos anteriores.
 
 > Personaliza tu buildings capa como gustes, pero recuerda que tiene que ser fácil de contar las diferentes partes del mapa y verse genial :sunglasses:
 
-### Paso a Paso: Ordenando los Niveles de Símbolos
+### 3.2.8 Paso a Paso: Ordenando los Niveles de Símbolos
 
 Cuando las capas de símbolos están representadas, también están representadas en una secuencia, similar a la forma en la que diferentes capas del mapa se representan. 
 
@@ -298,17 +298,17 @@ Cuando hayas terminado, recuerda guardar el símbolo para no perder tu trabajo s
 
 Guarda tu estilo en `trainingdata_QGIS/styles`. Puedes cargar estilos guardados previamente en cualquier momento con clic en el botón `Cargar estilo`.... Antes de cambiar un estilo, ten en mente que cualquier estilo no guardado que reemplaces se perderá.
 
-### :pencil2: Inténtalo tú! Cambia la apariencia de una capa
+### 3.2.9. :pencil2: Inténtalo tú! Cambia la apariencia de una capa
 
 * Cambia de nuevo la apariencia de la capa `roads`. Las calles deben ser estrechas y grises, con un fino contorno amarillo.
 
-### Paso a Paso: Tipos de Capas de Símbolos
+### 3.2.10. Paso a Paso: Tipos de Capas de Símbolos
 
 Además de ajustar los colores de relleno y usar patrones predefinidos, puedes utilizar diferentes tipos de capas de símbolos. El único tipo que hemos estado usando hasta ahora ha sido el tipo `Relleno sencillo`. Las capas de símbolos más avanzadas te permiten personalizar tus símbolos incluso más.
 
 Cada tipo de vector (punto, línea y polígono) tiene su propio conjunto de tipos de capas de símbolos. Primero veremos los tipos disponibles para puntos.
 
-#### Tipos de Capas de Símbolos para Puntos
+#### 3.2.10.1. Tipos de Capas de Símbolos para Puntos
 
 * Abre tu proyecto `mi_primer_mapa`.
 * Cambia las propiedades de símbolo para la capa `places`.
@@ -322,7 +322,7 @@ Cada tipo de vector (punto, línea y polígono) tiene su propio conjunto de tipo
 * Investiga las diversas opciones disponibles para ti, y elige un símbolo con el estilo que creas apropiado.
 * Si tienes dudas, utiliza `Marcador sencillo` redondeado con un `Estilo de marca blanco` y un `Color de relleno` verde pálido, con un `Tamaño` de 3,00 y una `Anchura de marca` de 0.5.
 
-#### Tipos de Capas de Símbolos para Líneas
+#### 3.2.10.1. Tipos de Capas de Símbolos para Líneas
 
 Para ver varias opciones disponibles para datos lineales:
 
@@ -340,7 +340,7 @@ Para ver varias opciones disponibles para datos lineales:
 
 Una vez has aplicado el estilo, echa un vistazo a los resultados en el mapa.
 
-#### Tipos de Capas de Símbolos para Polígonos
+#### 3.2.10.1. Tipos de Capas de Símbolos para Polígonos
 
 Para ver las varias opciones disponibles para los datos poligonales:
 
@@ -361,20 +361,20 @@ Para ver las varias opciones disponibles para los datos poligonales:
 
 Como resultado, tienes un símbolo de textura para la capa de agua, con el beneficio añadido de poder cambiar el tamaño, forma y distancia de los diferentes puntos que forman la textura.
 
-### En Conclusión
+### 3.2.11. En Conclusión
 
 Cambiando la simbología de las diferentes capas has transformado una colección de archivos vector en un mapa legible. No solo tú puedes ver qué está pasando, ¡es incluso bonito a la vista!
 
-### Más lecturas…
+### 3.2.12. Más lecturas…
 
 * [Galería de QGIS en Flickr](https://www.flickr.com/groups/qgis/pool/)
 * [Ejemplos Interesantes de Mapas en StackExchange](http://gis.stackexchange.com/questions/3083/examples-of-beautiful-maps)
 
-## Estado de las capas 
+## 3.3. Estado de las capas 
 
 El panel de capas de QGIS muestra todas las capas que están cargadas en el proyecto de mapa actual. Cada capa puede estar visible o invisible y activa o inactiva.
 
-### Capas visibles
+### 3.3.1. Capas visibles
 
 Una capa visible quiere decir que los elementos de la capa son visibles en el lienzo del mapa. El cuadrado a la izquierda del nombre de la capa en el panel de capas indica si la capa está visible. Se puede mostrar u ocultar una capa haciendo click en ese cuadro de marcación.
 
@@ -382,7 +382,7 @@ En la figura a continuación, sólamente las capas `roads` y `rivers` están vis
 
 ![Capas visibles](/img/roadsRiversVisibled.png)
 
-### Capas activas 
+### 3.3.2. Capas activas 
 
 Como veremos más adelante, la mayor parte de herramientas de QGIS trabajan sobre la capa activa. Una capa activa le indica a QGIS en qué capa realizar la acción correspondiente. La capa activa está indicada con un sombreado en el nombre de la capa en el panel de capas. Para activar una capa, basta con hacer click en su nombre en el panel de capas. Es posible activar varias capas manteniendo presionada la tecla “Ctrl” al hacer click en diferentes capas (tecla Command en Mac OS)  
 
@@ -390,11 +390,11 @@ En la siguiente figura, las capa buildings es la única que está activa.
 
 ![Capas activas](/img/buildingActived.png) 
 
-### :pencil2: Inténtalo tú! Mostrar, ocultar y activar capas
+### 3.3.3. :pencil2: Inténtalo tú! Mostrar, ocultar y activar capas
 
 Deja visibles solamente las capas `buildings`, `water`  y `roads`, y deja activas las capas `water` y `landuse`.
 
-### ¿Qué sigue a continuación?
+### 3.3.4. ¿Qué sigue a continuación?
 
 Cambiar símbolos para capas completas es útil, pero la información contenida dentro de cada capa no está todavía disponible para alguien que lea esos mapas. ¿Cómo se llaman esas calles? ¿A qué regiones administrativas pertenecen ciertas áreas? ¿Cuales son las superficies relativas de las granjas? Toda esta información todavía está oculta. La siguiente lección te explicará cómo representar estos datos en tu mapa.
 

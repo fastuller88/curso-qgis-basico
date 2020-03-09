@@ -10,16 +10,17 @@ Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mej
 ## El curso
 
 - Duración: 20 horas
-- Fecha: Del 23 al 15 de marzo de 2020
+- Fecha: Del 23 al 15 de marzo de 2020 (A definir)
 - Horario: A definir
 - Lugar: Ciudad de Ibarra
 
 ## Cotenidos
 
-* [Fundamentos SIG](fundamentos/fundamentos.md). Conceptos genereales de los sistemas información geográfico.
-* [Interfaz](interfaz/interfaz.md). Breve presentación de QGIS.
+* [1. Fundamentos SIG](fundamentos/fundamentos.md). Conceptos genereales de los sistemas información geográfico.
+* [2. Interfaz](interfaz/interfaz.md). Breve presentación de QGIS.
+* [3. Datos vectoriales y simbología](vectoriales/vectoriales.md). Tipos de datos vectoriales y simbología.
+* [4. Clasificación de datos vectoriales](clasificacion/clasificacion.md). Etiquetas y clasificación de datos vectoriales.
 * [Goservicios](geoservicios/geoservicios.md). Conexión a servicios WMS, WFS y WCS de la OGC.
-* [Datos vectoriales y simbología](vectoriales/vectoriales.md). Datos vectoriales, simbología y etiquetado básico.
 * [Generación de información](vectorizacion/vectorizacion.md). Creación y edición vectorial.
 * [Calculadora de campos](calculadora/calculadora.md). Cálculo de atributos.
 * [Análisis espacial](analisis/analisis.md). Análisis de distancia y superposición.

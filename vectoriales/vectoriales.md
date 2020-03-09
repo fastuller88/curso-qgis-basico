@@ -27,7 +27,7 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
         * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-símbolos-para-puntos)
         * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-símbolos-para-lineas)
         * [Tipos de Capas de Símbolos para Polígonos](#tipos-de-capas-de-símbolos-para-polígonos)
-    * [(OPCIONAL) Paso a Paso: Creando un Relleno SVG Personalizado](#opcional-paso-a-paso-creando-un-relleno-svg-personalizado)
+<!--     * [(OPCIONAL) Paso a Paso: Creando un Relleno SVG Personalizado](#opcional-paso-a-paso-creando-un-relleno-svg-personalizado) -->
     * [En Conclusión](#en-conclusion)
     * [Más lecturas…](#mas-lecturas)
 * [Estado de las capas](#estado-de-las-capas)
@@ -362,6 +362,38 @@ Para ver las varias opciones disponibles para los datos poligonales:
 ![Símbolos para puntos relleno sencillo corriente](/img/puntosRellenoSencillo.png)
 
 Como resultado, tienes un símbolo de textura para la capa de agua, con el beneficio añadido de poder cambiar el tamaño, forma y distancia de los diferentes puntos que forman la textura.
+
+### En Conclusión
+
+Cambiando la simbología de las diferentes capas has transformado una colección de archivos vector en un mapa legible. No solo tú puedes ver qué está pasando, ¡es incluso bonito a la vista!
+
+### Más lecturas…
+
+* [Galería de QGIS en Flickr](https://www.flickr.com/groups/qgis/pool/)
+* [Ejemplos Interesantes de Mapas en StackExchange](http://gis.stackexchange.com/questions/3083/examples-of-beautiful-maps)
+
+## Estado de las capas 
+
+El panel de capas de QGIS muestra todas las capas que están cargadas en el proyecto de mapa actual. Cada capa puede estar visible o invisible y activa o inactiva.
+
+### Capas visibles
+
+Una capa visible quiere decir que los elementos de la capa son visibles en el lienzo del mapa. El cuadrado a la izquierda del nombre de la capa en el panel de capas indica si la capa está visible. Se puede mostrar u ocultar una capa haciendo click en ese cuadro de marcación.
+
+En la figura a continuación, sólamente las capas `roads` y `rivers` están visibles.
+
+![Capas visibles](/img/roadsRiversVisibled.png)
+
+### Capas activas 
+
+Como veremos más adelante, la mayor parte de herramientas de QGIS trabajan sobre la capa activa. Una capa activa le indica a QGIS en qué capa realizar la acción correspondiente. La capa activa está indicada con un sombreado en el nombre de la capa en el panel de capas. Para activar una capa, basta con hacer click en su nombre en el panel de capas. Es posible activar varias capas manteniendo presionada la tecla “Ctrl” al hacer click en diferentes capas (tecla Command en Mac OS)  
+
+En la siguiente figura, las capa buildings es la única que está activa.
+
+![Capas activas](/img/buildingActived.png) 
+
+
+
 
 
 

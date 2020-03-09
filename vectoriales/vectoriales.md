@@ -306,4 +306,66 @@ Guarda tu estilo en `trainingdata_QGIS/styles`. Puedes cargar estilos guardados 
 
 ### Paso a Paso: Tipos de Capas de Símbolos
 
+Además de ajustar los colores de relleno y usar patrones predefinidos, puedes utilizar diferentes tipos de capas de símbolos. El único tipo que hemos estado usando hasta ahora ha sido el tipo `Relleno sencillo`. Las capas de símbolos más avanzadas te permiten personalizar tus símbolos incluso más.
+
+Cada tipo de vector (punto, línea y polígono) tiene su propio conjunto de tipos de capas de símbolos. Primero veremos los tipos disponibles para puntos.
+
+#### Tipos de Capas de Símbolos para Puntos
+
+* Abre tu proyecto `mi_primer_mapa`.
+* Cambia las propiedades de símbolo para la capa `places`.
+
+![Símbolo puntos](/img/simboloPuntos.png) 
+
+* Se puede acceder a los distintos tipos de capa símbolo seleccionando la capa `Marcador sencillo` en el panel `Capas de símbolos`, al hacer clic en la lista desplegable `Tipo de capa del símbolo`:
+
+![Tipos de símbologs puntos](/img/tiposDeSimbolosPuntos.png) 
+
+* Investiga las diversas opciones disponibles para ti, y elige un símbolo con el estilo que creas apropiado.
+* Si tienes dudas, utiliza `Marcador sencillo` redondeado con un `Estilo de marca blanco` y un `Color de relleno` verde pálido, con un `Tamaño` de 3,00 y una `Anchura de marca` de 0.5.
+
+#### Tipos de Capas de Símbolos para Líneas
+
+Para ver varias opciones disponibles para datos lineales:
+
+* Cambia el tipo de capa símbolo para el símbolo más alto de la capa `roads` a `Línea de marcador`:
+
+![Símbolos para Líneas](/img/lineaMarcador.png)
+
+* Selecciona la capa `Marcador sencillo` en el panel `Tipo de capa de símbolo`. Cambia las propiedades del símbolo para que coincida con el cuadro de diálogo siguiente:
+
+![Símbolos para líneas marcador sencillo](/img/lineaMarcadorSencillo.png)
+
+* Cambia el intervalo a 1,00:
+
+![Símbolos para líneas marcador sencillo intervalo](/img/lineaMarcadorIntervalo.png)
+
+Una vez has aplicado el estilo, echa un vistazo a los resultados en el mapa.
+
+#### Tipos de Capas de Símbolos para Polígonos
+
+Para ver las varias opciones disponibles para los datos poligonales:
+
+* Cambia el `Tipo de capa del símbolo` para la capa `water`, como antes para las otras capas.
+* Investiga qué opciones diferentes de la lista se pueden hacer.
+* Elige una de aquellas que encuentres adecuadas.
+* Si tienes dudas, utiliza `Patrón de relleno de puntos` con las siguientes opciones:
+
+![Símbolos para puntos marcador sencillo](/img/puntosMarcadorSencillo.png)
+
+![Símbolos para puntos marcador sencillo intervalo](/img/puntosMarcadorSencilloIntervalo.png)
+
+* Añade una nueva capa de símbolos con un `Relleno sencillo` corriente.
+* Haz el mismo azul claro con un borde azul oscuro.
+* Muévelo debajo del punto patrón de la capa símbolo con el botón `Bajar`.
+
+![Símbolos para puntos relleno sencillo corriente](/img/puntosRellenoSencillo.png)
+
+Como resultado, tienes un símbolo de textura para la capa de agua, con el beneficio añadido de poder cambiar el tamaño, forma y distancia de los diferentes puntos que forman la textura.
+
+
+
+
+
+
 

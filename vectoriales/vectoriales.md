@@ -392,7 +392,13 @@ En la siguiente figura, las capa buildings es la única que está activa.
 
 ![Capas activas](/img/buildingActived.png) 
 
+### :pencil2: Inténtalo tú! Mostrar, ocultar y activar capas
 
+Deja visibles solamente las capas `buildings`, `water`  y `roads`, y deja activas las capas `water` y `landuse`.
+
+### ¿Qué sigue a continuación?
+
+Cambiar símbolos para capas completas es útil, pero la información contenida dentro de cada capa no está todavía disponible para alguien que lea esos mapas. ¿Cómo se llaman esas calles? ¿A qué regiones administrativas pertenecen ciertas áreas? ¿Cuales son las superficies relativas de las granjas? Toda esta información todavía está oculta. La siguiente lección te explicará cómo representar estos datos en tu mapa.
 
 
 

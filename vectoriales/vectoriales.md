@@ -1,10 +1,10 @@
-# 3. Datos vectoriales y simbología
+# 3. Módulo: Datos vectoriales y simbología
 
 En este módulo, crearás un mapa básico, que se utilizará más tarde como la base para más demostraciones de las funcionalidades de QGIS.
 
 ## Contenidos
-* [3. Datos vectoriales y simbología](#3-datos-vectoriales-y-simbología)
-    - [3.1. Trabajando con datos Vectoriales](#31-trabajando-con-datos-vectoriales)
+* [3. Módulo: Datos vectoriales y simbología](#3-módulo-datos-vectoriales-y-simbología)
+    - [3.1. Lección: Trabajando con datos Vectoriales](#31-lección-trabajando-con-datos-vectoriales)
         - [3.1.1. Paso a Paso: Viendo los Atributos de la Capa](#311-paso-a-paso-viendo-los-atributos-de-la-capa)
         - [3.1.2. Paso a Paso: Cargando Datos Vectoriales Desde Archivos Shape](#312-paso-a-paso-cargando-datos-vectoriales-desde-archivos-shape)
         - [3.1.3. Paso a Paso: Cargando Datos Vectoriales desde un Conjunto de Datos Spatialite](#313-paso-a-paso-cargando-datos-vectoriales-desde-un-conjunto-de-datos-spatialite)
@@ -12,7 +12,7 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
         - [3.1.5. Paso a Paso: Reordenando las Capas](#315-paso-a-paso-reordenando-las-capas)
         - [3.1.6. En Conclusión](#316-en-conclusion)
         - [3.1.7. ¿Qué sigue a continuación?](#317-qué-sigue-a-continuación)
-    - [3.2. Simbología](#32-simbologia)
+    - [3.2. Lección: Simbología](#32-lección-simbologia)
         - [3.2.1. Paso a Paso: Cambiando colores](#321-paso-a-paso-cambiando-colores)
         - [3.2.2. Inténtalo tú! Cambia el color](#322-pencil2-inténtalo-tú-cambia-el-color)
         - [3.2.3. Paso a Paso: Cambiando la estructura del símbolo](#323-paso-a-paso-cambiando-la-estructura-del-siímbolo)
@@ -23,19 +23,19 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
         - [3.2.8. Paso a Paso: Ordenando los Niveles de Símbolos](#328-paso-a-paso-ordenando-los-niveles-de-símbolos)
         - [3.2.9. Inténtalo tú! Cambia la apariencia de una capa](#329-pencil2-cambia-la-apariencia-de-una-capa)
         - [3.2.10. Paso a Paso: Tipos de Capas de Símbolos](#3210-paso-a-paso-tipos-de-capas-de-símbolos)
-            - [3.2.10.1 Tipos de Capas de Símbolos para Puntos](#32101-tipos-de-capas-de-símbolos-para-puntos)
-            - [3.2.10.2 Tipos de Capas de Símbolos para Líneas](#32102-tipos-de-capas-de-símbolos-para-lineas)
-            - [3.2.10.3 Tipos de Capas de Símbolos para Polígonos](#3213-tipos-de-capas-de-símbolos-para-polígonos)
+            - [3.2.10.1. Tipos de Capas de Símbolos para Puntos](#32101-tipos-de-capas-de-símbolos-para-puntos)
+            - [3.2.10.2. Tipos de Capas de Símbolos para Líneas](#32102-tipos-de-capas-de-símbolos-para-lineas)
+            - [3.2.10.3. Tipos de Capas de Símbolos para Polígonos](#3213-tipos-de-capas-de-símbolos-para-polígonos)
         - [3.2.11. En Conclusión](#3211-en-conclusión)
         - [3.2.12. Más lecturas…](#3212-más-lecturas)
-    - [3.3. Estado de las capas](#33-estado-de-las-capas)
-        - [3.3.1 Capas visibles](#331-capas-visibles)
-        - [3.3.2 Capas activas](#332-capas-activas)
-        - [3.3.3 Inténtalo tú! Mostrar, ocultar y activar capas.](#333-pencil2-inténtalo-tú-mostrar-ocultar-y-activar-capas)
+    - [3.3. Lección: Estado de las capas](#33-lección-estado-de-las-capas)
+        - [3.3.1. Capas visibles](#331-capas-visibles)
+        - [3.3.2. Capas activas](#332-capas-activas)
+        - [3.3.3. Inténtalo tú! Mostrar, ocultar y activar capas.](#333-pencil2-inténtalo-tú-mostrar-ocultar-y-activar-capas)
         - [3.3.4 ¿Qué sigue a continuación?](#334-qué-sigue-a-continuación)
 
 
-## 3.1 Trabajando con datos Vectoriales
+## 3.1 Lección: Trabajando con datos Vectoriales
 Los datos vectoriales son posiblemente el tipo más común de los datos que se encuentran en el uso diario de los SIG. En él se describen los datos geográficos en términos de puntos, que se puede conectar a las líneas y polígonos. Cada objeto en un conjunto de datos de vectores se llama una **característica**, y se asocia con los datos que describe esa característica.
 
 **El objetivo de esta lección**. Aprender acerca de la estructura de los datos vectoriales, y cómo cargar un conjunto de datos vectoriales dentro de un mapa.
@@ -143,7 +143,7 @@ Ahora has añadido todas las capas que necesitas desde muchas fuentes diferentes
 
 Utilizando la paleta aleatoria asignada automáticamente cuando cargas las capas, tus mapas actuales probablemente no sean fáciles de leer. Sería preferible asignar tu propia elección de colores y símbolos. Esto es lo que aprenderás a hacer en la siguiente lección.
 
-## 3.2 Simbología
+## 3.2 Lección: Simbología
 
 La simbología de una capa es su apariencia visual en el mapa. La fortaleza básica del SIG sobre otras formas de representación de datos espaciales es que con el SIG, puedes obtener una representación visual dinámica de los datos con los que estás trabajando.
 
@@ -370,7 +370,7 @@ Cambiando la simbología de las diferentes capas has transformado una colección
 * [Galería de QGIS en Flickr](https://www.flickr.com/groups/qgis/pool/)
 * [Ejemplos Interesantes de Mapas en StackExchange](http://gis.stackexchange.com/questions/3083/examples-of-beautiful-maps)
 
-## 3.3. Estado de las capas 
+## Lección: 3.3. Estado de las capas 
 
 El panel de capas de QGIS muestra todas las capas que están cargadas en el proyecto de mapa actual. Cada capa puede estar visible o invisible y activa o inactiva.
 

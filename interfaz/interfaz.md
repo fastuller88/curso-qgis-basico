@@ -1,17 +1,17 @@
-# 2. La interfaz de QGIS
+# 2. Módulo: La interfaz de QGIS
 En esta sección te familiarizaras con la interfaz que nos presenta QGIS. Después de completar ésta sección, serás capaz de identificar correctamente los elementos básicos de la pantalla de QGIS y sabrás qué hace cada uno, y cargar un shapefile dentro de QGIS.
 
 > Advertencia: Este curso incluye instrucciones para añadir, borrar y alterar bases de datos del SIG. Hemos proporcionado bases de datos de entrenamiento para éste propósito. Antes de usar técnicas descritas aquí en tus propios datos, siempre asegúrate de que tienes los backups adecuados!
 
 
 ## Contenidos
-* [2. La interfaz de QGIS](#2-la-interfaz-de-qgis) 
+* [2. La interfaz de QGIS](#2-módulo-la-interfaz-de-qgis) 
 * [2.1. Una Breve Introducción](#21-una-breve-introduccion)
     * [2.1.1. ¿Por qué QGIS?](#211-por-qué-qgis)
-* [2.2. Añadiendo tu primera capa](#22-anadiendo-tu-primera-capa)
+* [2.2. Lección: Añadiendo tu primera capa](#22-lección-anadiendo-tu-primera-capa)
     - [2.2.1. Paso a paso: Prepara un mapa](#221-paso-a-paso-prepara-un-mapa)
-* [2.3. Una vista general de la interfaz](#23-una-vista-general-de-la-interfaz)
-    - [2.3.1. Panel de capas](#231-panel-de-capas)
+* [2.3. Lección: Una vista general de la interfaz](#23-una-vista-general-de-la-interfaz)
+    - [2.3.1. Panel de capas](#231-lección-panel-de-capas)
     - [2.3.2. Panel del explorador](#232-panel-del-explorador)
     - [2.3.3. Barras de herramientas](#233-barras-de-herramientas)
     - [2.3.4. Lienzo del mapa](#234-lienzo-del-mapa)
@@ -35,7 +35,7 @@ Aquí hay solo algunas de las razones:
 * **Extensa ayuda y documentación está disponible**. Si te estancas con cualquier cosa, puedes ayudarte con la extensa documentación, tus compañeros de QGIS, o incluso en los promotores.
 * **Multiplataforma**. QGIS puede ser instalado en MacOS, Windows y Linux.
 
-## 2.2. Añadiendo tu primera capa 
+## 2.2. Lección: Añadiendo tu primera capa 
 
 > Nota: Antes de comenzar este ejercicio, QGIS debe estar instalado en su computadora.
 
@@ -55,7 +55,7 @@ Descarga el archivo comprimido con los datos para éste curso haciendo click en 
 * Haga clic en el botón `Guardar Proyecto`...:![Guardar Proyecto](/img/guardar.png)
 * Guarda el mapa en `exercise_data` y nómbralo `mi_primer_mapa.qgz`.
 
-## 2.3. Una vista general de la interfaz
+## 2.3. Lección: Una vista general de la interfaz
 
 Exploraremos la interfaz de usuario de QGIS, de forma que se familiarice con los menús, barras de herramientas, lienzo del mapa y lista de capas, que forman la estructura básica de la interfaz.
 ![Vista General](/img/vistaGeneral.png)

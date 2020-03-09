@@ -22,12 +22,10 @@ En este módulo, crearás un mapa básico, que se utilizará más tarde como la 
     * [Inténtalo tú! Cambia la textura de una capa](#pencil2-inténtalo-tú-cambia-la-textura-de-una-capa)
     * [Paso a Paso: Ordenando los Niveles de Símbolos](#paso-a-paso-ordenando-los-niveles-de-símbolos)
     * [Inténtalo tú! cambia el color](#pencil2-inténtalo-tú-cambia-el-color)
-    <!-- * [Inténtalo tú! Cambia la apariencia de una capa](#pencil2-inténtalo-tú-cambia-la-apariencia-de-una-capa) -->
     * [Paso a Paso: Tipos de Capas de Símbolos](#paso-a-paso-tipos-de-capas-de-símbolos)
         * [Tipos de Capas de Símbolos para Puntos](#tipos-de-capas-de-símbolos-para-puntos)
         * [Tipos de Capas de Símbolos para Líneas](#tipos-de-capas-de-símbolos-para-lineas)
         * [Tipos de Capas de Símbolos para Polígonos](#tipos-de-capas-de-símbolos-para-polígonos)
-<!--     * [(OPCIONAL) Paso a Paso: Creando un Relleno SVG Personalizado](#opcional-paso-a-paso-creando-un-relleno-svg-personalizado) -->
     * [En Conclusión](#en-conclusion)
     * [Más lecturas…](#mas-lecturas)
 * [Estado de las capas](#estado-de-las-capas)

@@ -289,7 +289,7 @@ Por ejemplo, queremos dar a las calles un símbolo como este:![Calles](/img/stre
 * Dale a la nueva capa de símbolo superior un `Ancho de marca` de 0.2, color blanco y selecciona `Línea de guiones` del menú desplegable `Estilo de plumilla (Stroke style)`.
 * Dale a la capa de símbolo inferior un grosor de 1.3 y asegúrate de que es una `Línea sólida`.
 
-![Añadir varios capa de símbolo vías](/img/capaSimboloVarios.png) 
+![Añadir varios capa de símbolo vías](/img/capaSimboloVias.png) 
 
 >Si cambias el orden de las capas de símbolo notarás que la línea negra sólida cubre a la línea blanca de guiones y no se visualiza correctamente. Para prevenir que esto ocurra, puedes ordenar los niveles de símbolos y de este modo controlar el orden en el que las diferentes capas de símbolos se representan.
 Para cambiar el orden de la capa de símbolos, seleccione la línea blanca de guiones en el estilo de la capa y haga click en el botón “subir” para colocarla sobre la línea negra.

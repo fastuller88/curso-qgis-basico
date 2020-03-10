@@ -234,7 +234,7 @@ END
 * Asegúrate de guardar los cambios realizados en la tabla de atributos: ![Guardar edit](/img/guardarEdicion.png)
 * Utiliza esto para ajustar y personalizar los tamaños de fuente para cada tipo de sitio distinto.
 
-[Cambiar font size](/img/editarFontSize.png)
+![Cambiar tamaño de fuente](/img/editarFontSize.png)
 
 Deberás ver como tamaño de fuente cambia para cada tipo de `place`
 

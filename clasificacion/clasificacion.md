@@ -242,7 +242,7 @@ Deberás ver como tamaño de fuente cambia para cada tipo de `place`
 
 No podemos cubrir todas las opciones en este curso, pero date cuenta de que el Herramienta de `Opciones de etiquetado de capa` tiene muchas otras funciones útiles. Puedes ajustar representación basada en escala, alterar las prioridades de representación para las etiquetas en una capa, y ajustar cada opción de etiquetas utilizando la capa de atributos. Puedes incluso ajustar la rotación, posición XY, y otras propiedades de una capa (si tienes diferentes campos de atributos situados para tal fin). Puedes entonces editar las propiedades utilizando las herramientas adyacentes a la Herramienta de `Opciones de etiquetado de capa` principal. Estas herramientas estarán activas solamente si los campos de atributo requeridos están disponibles y el modo edición está activado.
 
-[Herramientas De Etiquetas](/img/herramientasDeEtiquetas.png)herramientasDeEtiquetas
+![Herramientas De Etiquetas](/img/herramientasDeEtiquetas.png)herramientasDeEtiquetas
 
 Si deseas aprender cómo funcionan estas opciones avanzadas de etiquetado, puedes consultar el manual de QGIS o buscar en internet ejemplos de [“Cómo mover etiquetas en QGIS”](https://gis.stackexchange.com/questions/183049/move-label-in-qgis).
 

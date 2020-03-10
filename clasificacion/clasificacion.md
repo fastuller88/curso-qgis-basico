@@ -76,7 +76,7 @@ Necesitarás elegir el campo de atributos que será utilizado en las etiquetas. 
 
 * Selecciona `name` de la lista:
 
-![Estilo de capas](/img/herramientaEtiquetado.png)
+![Estilo de capas](/img/estiloDeCapas.png)
 
 * Clic en Aplicar.
 
@@ -106,7 +106,7 @@ Verás que esto añade un un borde a las etiquetas de lugares, haciendo que sean
 Ahora podemos situar la posición de las etiquetas en relación con sus puntos marcadores.
 
 * En el cuadro de diálogo Herramienta de `Opciones de etiquetado de capa`, ve a la pestaña `Ubicación`.
-* Cambie el valor de Distancia a 2 mm y cerciórese que Alrededor del punto esté seleccionado.
+* Cambie el valor de `Distancia` a 2 mm y cerciórese que `Alrededor del punto` esté seleccionado.
 
 ![Etiquetas de places ubicación](/img/etiquetasPlacesUbicacion.png)
 
@@ -144,14 +144,118 @@ Esto revelara las opciones Cuadrante que puedes utilizar para ajustar la posici�
 
 ### 4.2.4. :pencil2: Inténtalo tú! Personalizar las Etiquetas
 
+* Vuelve a los ajustes de etiqueta y símbolos que tenías anteriormente para tener un punto marcador y una etiqueta separados por 2.00mm. Puede que quieras ajustar el estilo del punto marcador o de las etiquetas en este punto.
 
+> Su mapa ahora debe presentar los puntos del marcador y las etiquetas deben compensarse por 2.0 mm: El estilo de los marcadores y etiquetas debe permitir que sean claramente visibles en el mapa
+
+* Ajusta el mapa a escala 1:50000. Puedes hacerlo escribiéndolo en la caja `Escala` en la `Barra de estado`.
+* Modifica tus etiquetas para adecuarlas a la vista en esa escala.
 
 ### 4.2.5. Paso a Paso: Etiquetando Líneas
+
+Ahora que sabes cómo funcionan las etiquetas, hay un problema adicional. Los puntos y polígonos son fáciles de etiquetar, pero ¿Qué pasa con las líneas? Si las etiquetas del mismo modo que los puntos, el resultado se verá así:
+
+![Etiquetas lineas muy basico](/img/etiquetasLineasMuyBasico.png) 
+
+Ahora daremos un nuevo formato a las etiquetas de la capa roads para que sean fáciles de entender.
+
+* Oculta la capa `Places` para que no te moleste.
+* Activa las etiquetas de la capa `roads` como antes.
+* Ajusta el `Tamaño` de fuente a 10 para poder ver más etiquetas.
+* Amplía el zoom al área central de la ciudad
+
+Probablemente encontrarás el estilo de texto con valores por defecto y las etiquetas resultarán difíciles de leer. Ajusta el formato de texto de las etiquetas a un `Color` gris oscuro o negro y un `Buffer` amarillo pálido.
+
+El mapa se verá parecido a esto, dependiendo de la escala:
+
+![Etiquetas lineas muy basico con buffer](/img/etiquetasLinesConBuffer.png) 
+
+Verás que algunos de los nombres de las calles aparecen más de una vez y que no siempre son necesarios. Para prevenir esto:
+
+En el cuadro de diálogo `Configuración del etiquetado de la capa`, elige la opción `Representación`y selecciona `Combinar líneas combinadas para evitar etiquetas duplicadas`:
+
+![Etiquetas lineas representacion](/img/etiquetasLineasRepresentacion.png) 
+
+* Clic en `Aplicar`
+
+Otra función útil es prevenir que las etiquetas se dibujen con caracteres demasiado pequeños para ser apreciados.
+
+* En el mismo panel `Representación`, ajusta el valor de `Suprimir etiquetado de objetos espaciales menores que` a 5mm y nota los resultados cuando hagas clic en `Aplicar`.
+
+Prueba diferentes ajustes de `Ubicación`. Como hemos visto anteriormente, la opción `Paralelo` no es una buena idea en este caso, así que prueba mejor con `Curvo`.
+
+* Selecciona la opción `Curvo` en el panel `Ubicación` del cuadro de diálogo `Opciones de etiquetado de capa`.
+
+Aquí está el resultado:
+
+  
+
 ### 4.2.6. Paso a Paso: Ajustes Definidos de Datos
+
+* Desactiva las etiquetas de la capa `roads`.
+* Reactiva las etiquetas para la capa `places`.
+* Abre la tabla de atributos para `places` a través del botón ![Boton tabla atributos](/img/botonTablaAtributos.png).
+
+Tiene un campo que nos interesa ahora: `place` que define el tipo de área urbana para cada objeto. Podemos usar estos datos para influir en los estilos de las etiquetas.
+
+* Navega al panel `Texto` en el panel `Etiquetas`.
+* En el menú desplegable `Cursiva` (Marcado con una C o una I) selecciona Editar...  para abrir Etiqueta basada en expresión:
+
+![Editar estilo](/img/etiquetaEditar.png).
+
+En el cuadro de texto, escribe ```“place” = 'village'``` y clic Aceptar:
+
+![Editar estilo village](/img/etiquetaEditarVillage.png)
+
+> Nota los efectos: Verás que los `places` igual al `village` ahora tienen letra cursiva.
+
 ### 4.2.7. :pencil2: Inténtalo tú! Utilizando Ajustes Definidos de Datos
+
+> Nota: Estamos saltando hacia adelante un poco para demostrar algunos ajustes avanzados de las etiquetas. En el nivel avanzado, se asume que sabrás qué significa lo siguiente. En caso contrario, eres libre de dejar esta sección y volver cuando hayas cubierto los materiales requeridos.
+
+* Abre la Tabla de Atributos para `places`.
+* Entra en el modo editar haciendo clic en el botón: ![Editar atributos](/img/editar.png)
+* Abre la `Calculadora de campos`: ![Calculadora de campos](/img/calculadoraCampos.png)
+
+Configúrala como ésta:
+
+```
+CASE 
+WHEN "place" IS 'city' THEN 16 
+WHEN "place" IS 'neighbourhood' THEN 14
+WHEN "place" IS 'village' THEN 12
+WHEN "place" IS 'square' THEN 10
+ELSE 8
+END
+```
+
+![Calculadora de campos font size](/img/fontSize.png)
+
+* Asegúrate de guardar los cambios realizados en la tabla de atributos: ![Guardar edit](/img/guardarEdicion.png)
+* Utiliza esto para ajustar y personalizar los tamaños de fuente para cada tipo de sitio distinto.
+
+[Cambiar font size](/img/editarFontSize.png)
+
+Deberás ver como tamaño de fuente cambia para cada tipo de `place`
+
 ### 4.2.8. Más Posibilidades Con Etiquetas
+
+No podemos cubrir todas las opciones en este curso, pero date cuenta de que el Herramienta de `Opciones de etiquetado de capa` tiene muchas otras funciones útiles. Puedes ajustar representación basada en escala, alterar las prioridades de representación para las etiquetas en una capa, y ajustar cada opción de etiquetas utilizando la capa de atributos. Puedes incluso ajustar la rotación, posición XY, y otras propiedades de una capa (si tienes diferentes campos de atributos situados para tal fin). Puedes entonces editar las propiedades utilizando las herramientas adyacentes a la Herramienta de `Opciones de etiquetado de capa` principal. Estas herramientas estarán activas solamente si los campos de atributo requeridos están disponibles y el modo edición está activado.
+
+[Herramientas De Etiquetas](/img/herramientasDeEtiquetas.png)herramientasDeEtiquetas
+
+Si deseas aprender cómo funcionan estas opciones avanzadas de etiquetado, puedes consultar el manual de QGIS o buscar en internet ejemplos de [“Cómo mover etiquetas en QGIS”](https://gis.stackexchange.com/questions/183049/move-label-in-qgis).
+
+Eres libre de explorar más posibilidades del sistema de etiquetas.
+
 ### 4.2.9. En Conclusión
+
+Has aprendido a usar la capa de atributos para crear etiquetas dinámicas. Esto puede hacer tu mapa mucho más informativo y estilizado.
+
 ### 4.2.10. ¿Qué sigue a continuación?
+
+Ahora que sabes cómo los atributos conllevan una diferencia visual en tu mapa, ¿Cómo los usamos para cambiar la simbología de los objetos? ¡Ese es el tema de la siguiente lección!
+
 ## 4.3 Lección: Clasificación
 ### 4.3.1. Paso a Paso: Clasificación de Datos Nominales
 ### 4.3.2. :pencil2: Inténtalo tú! Más Clasificación

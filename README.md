@@ -20,6 +20,7 @@ Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mej
 * [2. Interfaz](interfaz/interfaz.md). Breve presentación de QGIS.
 * [3. Datos vectoriales y simbología](vectoriales/vectoriales.md). Tipos de datos vectoriales y simbología.
 * [4. Clasificación de datos vectoriales](clasificacion/clasificacion.md). Etiquetas y clasificación de datos vectoriales.
+* [5. Creación de mapas](composicion/composicion.md). Composición de mapas.
 * [Goservicios](geoservicios/geoservicios.md). Conexión a servicios WMS, WFS y WCS de la OGC.
 * [Generación de información](vectorizacion/vectorizacion.md). Creación y edición vectorial.
 * [Calculadora de campos](calculadora/calculadora.md). Cálculo de atributos.

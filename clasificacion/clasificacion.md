@@ -257,9 +257,128 @@ Has aprendido a usar la capa de atributos para crear etiquetas dinámicas. Esto 
 Ahora que sabes cómo los atributos conllevan una diferencia visual en tu mapa, ¿Cómo los usamos para cambiar la simbología de los objetos? ¡Ese es el tema de la siguiente lección!
 
 ## 4.3 Lección: Clasificación
+
+Las etiquetas son una buena forma de comunicar información como nombres de sitios individuales, pero no pueden ser usados para todo. Por ejemplo, supongamos que alguien quiere saber qué es cada uso de suelo `landuse`. Utilizando etiquetas, obtendrías esto:
+
+![Clasificacion Landuse](/img/clasificacionLanduseEtiquetas.png)
+
+Esto dificulta la lectura el etiquetado del mapa e incluso sería abrumador si hay muchos usos diferentes del territorio en un mapa.
+
+**El objetivo de esta lección**: Aprender cómo clasificar los datos vectoriales efectivamente.
+
 ### 4.3.1. Paso a Paso: Clasificación de Datos Nominales
+
+* Abrir el cuadro de diálogo `Propiedades de la Capa` para la capa `landuse`.
+* Ir a la pestaña `Simbología`.
+* Haga clic sobre la lista desplegable que dice `Símbolo único` y cambiarlo a `Categorizado`.
+* En el nuevo panel, cambiar `Valor por landuse` y `Rampa de color` por `Greens`.
+* Clic el botón  `Clasificar`:
+
+![Clasificacion Landuse Categoriazado](/img/clasificacionLanduseCategorias.png)
+
+* Clic en `Aceptar`
+
+![Landuse Categoriazdo](/img/landuseClasificado.png)
+
+Ahora nuestros polígonos de usos del territorio están correctamente coloreados y clasificados estando las áreas con el mismo uso del territorio del mismo color. Puede que quieras quitar el borde negro de la capa `landuse`:
+
+* Abre `Propiedades de la capa`, ve a la pestaña `Simbología` y selecciona `Símbolo`.
+* Cambia el símbolo eligiendo `Sin plumilla` en el `Estilo de marca` de la capa de símbolo `Relleno sencillo` y clic en `Aceptar`.
+
+Verás que los contornos del polígono de usos del territorio se ha borrado, dejando solo nuestro relleno de colores para cada clasificación.
+
+Si quieres, puedes cambiar el color de relleno para cada área de uso del territorio con doble clic en el bloque de color correspondiente.
+
+![Landuse Categoriazdo Un Color](/img/landuseCambiarUnColor.png)
+
+Nota que hay una categoría *`All other values`* que pertenecen a los valores vacíos.
+
+La categoría vacía se usa para colorear cualquier objeto que no tenga un valor definido para uso del territorio o que tiene un valor NULL. Es importante mantener esta categoría para que las áreas con un valor NULL sigan representadas en el mapa. Puede que quieras cambiar el color a uno que represente mejor el valor en blanco o NULL.
+
+¡Recuerda guardar tu mapa ahora para no perder todos tus laboriosos cambios!
+
 ### 4.3.2. :pencil2: Inténtalo tú! Más Clasificación
+
+Si solo estás siguiendo el contenido del nivel básico, usa el conocimiento que has ganado anteriormente para clasificar la capa `buildings`. Ajusta la categorización en la columna de `buildings` y usa la rampa de color `Spectral`.
+
+> Nota: Recuerda ampliar en un área urbana para ver los resultados.
+
 ### 4.3.3. Paso a Paso: Clasificación por Ratios
+
+Hay cuatro tipos de clasificación: nominal, ordinal, de intervalos y relativa.
+
+En clasificación **nominal**, las categorías en las que los objetos están clasificados están basadas en nombres; no tienen orden. Por ejemplo; nombres de ciudades, códigos postales, etc.
+
+En clasificación **ordinal**, las categorías están organizadas en cierto orden. Por ejemplo, ciudades del mundo pueden tener un rango dependiendo de la importancia: Capital de País, Capital de Provincia, Capital de Cantón, etc.
+
+En clasificación de **intervalos**, los números están en una escala con valores positivos, negativos y nulos. Por ejemplo: altura sobre/bajo el nivel del mar, temperatura sobre/bajo congelación (0 grados Centígrados), etc.
+
+En clasificación por **razones**, los números están en una escala con sólo valores positivos y nulos. Por ejemplo: temperatura sobre cero absoluto (0 grados Kelvin), distancia desde un punto, cantidad media mensual de tráfico en una calle dada, etc.
+
+En el ejemplo anterior, usamos clasificación **nominal** para representar cada tipo de uso del suelo. Ahora usaremos clasificación de rango para clasificar los usos del suelo por área.
+
+* Guarda tu simbología de usos del suelo (si quieres conservarla) con clic en el botón `Guardar estilo` del cuadro de diálogo `Estilo`.
+
+Vamos a reclasificar la capa, así que las clases existentes se perderán si no están guardadas.
+
+* Cierra el cuadro de diálogo Estilo.
+* Abre la `Tabla de Atributos` para la capa `landuse`.
+
+Queremos clasificar las áreas de usos del suelo por tamaño, pero hay un problema: no tienen un campo de tamaño, así que tendremos que crearlo y calcularlo.
+
+* Abre la Tabla de Atributos para `landuse`.
+* Entra en el modo editar haciendo clic en el botón: ![Editar atributos](/img/editar.png)
+* Abre la `Calculadora de campos`: ![Calculadora de campos](/img/calculadoraCampos.png)
+
+Configúrala como ésta:
+
+```
+$area
+```
+
+* En la Lista de funciones, selecciona Geometría ‣ $area.
+
+![Calculadora de campos area](/img/calcularArea.png)
+
+* Asegúrate de guardar los cambios realizados en la tabla de atributos: ![Guardar edit](/img/guardarEdicion.png)
+* Haz doble clic en ella para que aparezca en el campo `Expresión`
+* Clic `Aceptar`.
+
+Ahora tu campo AREA está lleno de valores.
+
+> Nota: Debido a que el Sistema de Referencia de Coordenadas (SRC) es EPSG:4326 - WGS 84 - Geográfico, esas áreas están en grados. Luego los calcularemos en metros cuadrados.
+
+* Abre la pestaña `Simbología` del cuadro de diálogo `Propiedades de la capa`.
+* Cambia la clasificación del estilo de `Categorizado` a `Graduado`.
+* Cambia el `Valor` a `area`:
+* En `Rampa de color`, elige la opción `Crear nueva rampa de color...` para obtener este cuadro de diálogo:
+
+![Nueva rampa de color](/img/nuevaRampaColor.png)
+
+* Elige `Gradiente` (si no estaba ya seleccionada) y clic en `Aceptar`. Verás esto:
+
+![Dialogo nueva rampa de color](/img/dialogoNuevaRampaColor.png)
+
+Estarás usando esto para denotar áreas, con áreas pequeñas como `Color 1` y áreas grandes como `Color 2`.
+
+* Elige los colores apropiados.
+
+En el ejemplo, el resultado se ve así:
+
+![Dialogo nueva rampa de color dos colores](/img/dialogoNuevaRampaColorEditado.png)
+
+* Clic `Aceptar`.
+
+Ahora tendrás algo como esto:
+
+![Dialogo nueva rampa de color dos colores graduada](/img/clasificacionGraduada.png)
+
+
+
+
+
+
+
 ### 4.3.4. :pencil2: Inténtalo tú! Refinar la Clasificación
 ### 4.3.5. Paso a Paso: Clasificación basada en Reglas
 ### 4.3.6. En Conclusión

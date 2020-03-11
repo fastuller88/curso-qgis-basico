@@ -370,7 +370,6 @@ En el ejemplo, el resultado se ve así:
 * Clic `Aceptar`.
 
 Ahora tendrás algo como esto:
-
 ![Dialogo nueva rampa de color dos colores graduada](/img/clasificacionGraduada.png)
 
 

@@ -370,16 +370,58 @@ En el ejemplo, el resultado se ve así:
 * Clic `Aceptar`.
 
 Ahora tendrás algo como esto:
+
 ![Dialogo nueva rampa de color dos colores graduada](/img/clasificacionGraduada.png)
 
+Deja todo lo demás como está.
 
+* Clic en Aceptar:
 
-
-
-
+![Mapa nueva rampa de color dos colores graduada](/img/mapaClasificacionGraduada.png)
 
 ### 4.3.4. :pencil2: Inténtalo tú! Refinar la Clasificación
+
+* Quita las líneas de borde de los polígonos de uso del suelo.
+* Cambia los valores de Modo y Clases hasta que obtengas una clasificación coherente.
+
+> Usa el nombre del método como en el primer ejercicio de la lección para deshacerse de los límites
+> Cambia `Clases` = 6 y `Modo` = `Rupturas Naturales(Jenks)` (y usando los mismos colores, por supuesto). Nota los cambios.
+
 ### 4.3.5. Paso a Paso: Clasificación basada en Reglas
+
+Es común combinar múltiples criterios para una clasificación, pero desafortunadamente la clasificación normal solo tiene en cuenta un atributo. Ahí es donde la clasificación basada en reglas entra en juego.
+
+* Abrir el cuadro de diálogo `Propiedades de la Capa` para la capa `landuse`.
+* Escoge la pestaña `Simbología`.
+* Ve al estilo de clasificación `Basado en reglas`. Tendrás esto:
+
+![Clasificacion basado en reglas](/img/clasificacionReglas.png)
+
+* Haga clic en el botón `Añadir regla` ![Anadir regla](/img/anadir.png).
+* Un nuevo cuadro de diálogo aparecerá. En el campo `“Etiqueta”` coloca el nombre que aparecerá en la categoría, en este caso “Residencial”.
+* Haz clic en el botón ![Expresion](/img/expresion.png) al lado del área de texto `Filtro`.
+* Utilizando el constructor de consultas que aparece, escribe `"landuse" = 'residential'`, clic `Aceptar` y elige como color un naranja pálido y quita el borde.
+* Añade una nueva nueva regla, ahora llamada `“Áreas verdes”`, y como filtro colocar   `"landuse"  =  'grass' OR  "landuse"  =  'forest' OR  "landuse"  =  'recreation_ground'`. Elige un color verde intermedio para el relleno y sin borde o estilo de marca.
+* Añade un nueva nueva regla, ahora llamada `“Industrial”`, con el filtro `"landuse"  =  'industrial'` y asigna un color rosa.
+* Finalmente añade una última regla, con el nombre `“Comercial”`, color café y el siguiente filtro:  `("landuse"   =  'commercial' OR  "landuse"   =  'retail' ) AND  "area" > 5000`
+
+Las reglas que acabas de definir, asignan simbologías específicas de acuerdo a los atributos de cada elemento, de forma individual o combinada. Aquellos elementos que no coincidan con ninguna regla tomarán la simbología de la categoría `“(no filter)”`, por lo que podríamos asignar un color pálido más neutro. 
+
+Tu cuadro de diálogo ahora ha quedado así:
+
+![Reglas configuradas](/img/reglasConfiguradas.png)
+
+Tu mapa se parecerá a este:
+
+![Mapa reglas configuradas](/img/mapaReglas.png)
+
+Ahora tienes un mapa con diferentes usos del suelo representados de diferentes maneras.
+
 ### 4.3.6. En Conclusión
+
+La simbología nos permite representar los atributos de una capa de una forma sencilla de entender. También permite a los que visualicen el mapa entender el significado de las características, utilizando atributos relevantes que hemos escogido. Dependiendo del problema al que te enfrentes, aplicarás diferentes técnicas de clasificación para resolverlos.
+
 ### 4.3.7. ¿Qué sigue a continuación?
+
+Ahora tenemos un bonito mapa, pero ¿Cómo obtendremos del QGIS un formato que se pueda imprimir o convertirlo en una imagen o PDF? ¡Ese es el tema de la siguiente lección!
 

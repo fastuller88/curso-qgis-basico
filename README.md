@@ -21,8 +21,10 @@ Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mej
 * [3. Datos vectoriales y simbología](vectoriales/vectoriales.md). Tipos de datos vectoriales y simbología.
 * [4. Clasificación de datos vectoriales](clasificacion/clasificacion.md). Etiquetas y clasificación de datos vectoriales.
 * [5. Creación de mapas](composicion/composicion.md). Composición de mapas.
+* [6. Creando Datos Vectoriales](creacion/creacion.md). Crear nuevos conjuntos de datos por completo. Creación y edición vectorial.
+
 * [Goservicios](geoservicios/geoservicios.md). Conexión a servicios WMS, WFS y WCS de la OGC.
-* [Generación de información](vectorizacion/vectorizacion.md). Creación y edición vectorial.
+
 * [Calculadora de campos](calculadora/calculadora.md). Cálculo de atributos.
 * [Análisis espacial](analisis/analisis.md). Análisis de distancia y superposición.
 * [Automatización](automatizacion/automatizacion.md). Introducción a la modelización de procesos espaciales.

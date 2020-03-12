@@ -62,6 +62,7 @@ En este ejemplo, el mapa ya está representado con la simbología que queremos. 
 ![disenadorImpresionPropiedades](/img/disenadorImpresionPropiedades.png)
 
 En la pestaña `Diseño`, comprueba los valores de `Configuración de exportación` 
+
 * `Resolución de exportación`: 300dpi
 
 Ahora tienes listo una página A4 en blanco para exportar o imprimir a una resolución de 300ppi. A continuación agregaremos los elementos del mapa a la página.
@@ -246,7 +247,7 @@ Si estás haciendo este curso en un nivel Básico  o Intermedio , lee técnicas 
 Si te están presentando el curso, el presentador puede querer que entregues una versión final de tu mapa, exportado a PDF, para evaluarlo. Si estás haciendo el curso por ti mismo, es recomendable que te evalúes tu mismo utilizando el mismo criterio. Tus mapas serán evaluados respecto a la apariencia general de la simbología y el propio mapa, así como la apariencia y la disposición de la página del mapa y sus elementos. Recuerda que el énfasis en la evaluación de la apariencia del mapa siempre será en facilidad de uso. Cuanto mejor se vea el mapa y más fácilmente se entienda con un simple vistazo, mejor.
 
 ¡Feliz personalización!
-'
+
 ### 5.3.1. En Conclusión
 
 Los primeros cuatro módulos te han enseñado a crear y dar estilo a un mapa vectorial. En los próximos cuatro módulos, aprenderás a usar QGIS para un análisis completo SIG. Esto incluye crear y editar datos vectoriales; analizar datos vectoriales; utilizar y analizar datos raster; y utilizar SIG para solucionar un problema de principio a fin, utilizando tanto fuentes de datos raster como vectoriales.

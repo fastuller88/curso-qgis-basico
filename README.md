@@ -9,7 +9,7 @@ Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mej
 
 ## El curso
 
-[comment]: - Duración: 20 horas
+<!--  Duración: 20 horas !-->
 - Duración: 2H45min
 - Fecha: Martes 21 de Diciembre
 - Horario: A definir

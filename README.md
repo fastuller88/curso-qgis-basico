@@ -12,7 +12,7 @@ Una limitada base teórica te será proporcionada para explicarte el propósito 
 <!--  Duración: 20 horas !-->
 - Duración: 2H45min
 - Fecha: Martes 21 de Diciembre
-- Horario: A definir
+- Horario: 14:00
 - Lugar: Remoto
 - Link: Por definir
 

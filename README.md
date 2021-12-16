@@ -14,6 +14,7 @@ Una limitada base teórica te será proporcionada para explicarte el propósito 
 - Fecha: Martes 21 de Diciembre
 - Horario: A definir
 - Lugar: Remoto
+- Link: Por definir
 
 ## Cotenidos
 

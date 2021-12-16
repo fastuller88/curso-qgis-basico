@@ -5,7 +5,7 @@ Este repositorio contiene información y materiales para el "Curso QGIS Básico"
 
 En ésta categoría básica, el curso asume que tienes poca o ninguna experiencia anterior con conocimiento teórico de SIG o de operaciones con programas SIG.
 Una limitada base teórica te será proporcionada para explicarte el propósito de la acción que vayas a llevar a cabo en el programa, con énfasis de aprender haciendo.
-Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mejorado, y cómo aprovechar su poder a través de QGIS.
+<!--Cuando completes el curso, tendrás un concepto de las posibilidades del SIG mejorado, y cómo aprovechar su poder a través de QGIS. !-->
 
 ## El curso
 
